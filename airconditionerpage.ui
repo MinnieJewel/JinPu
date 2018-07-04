@@ -1,0 +1,2016 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AirConditionerPage</class>
+ <widget class="QWidget" name="AirConditionerPage">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1024</width>
+    <height>618</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QLabel
+{
+	color: white;
+	border: 2px groove, gray;
+    border-color: gray;
+	font: 18px, &quot;SimHei&quot;;	
+}
+
+QWidget
+{
+	background-color: black;
+}
+QPushButton
+{
+   font: 20px, &quot;SimHei&quot;;
+   color: black;
+   background-color: rgb(250, 250, 250);
+   border-radius: 5px;
+   border: 2px solid rgb(150, 150, 150);
+}
+QPushButton:disabled
+{
+		border-radius:5px;
+	font: 20px, &quot;SimHei&quot;;
+    color: grey;
+	background-color: rgb(221,221,221);
+}</string>
+  </property>
+  <widget class="QLabel" name="label_controlState4">
+   <property name="geometry">
+    <rect>
+     <x>700</x>
+     <y>140</y>
+     <width>180</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_controlState2">
+   <property name="geometry">
+    <rect>
+     <x>305</x>
+     <y>140</y>
+     <width>195</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_controlState">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>140</y>
+     <width>125</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string>模式</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_controlState3">
+   <property name="geometry">
+    <rect>
+     <x>500</x>
+     <y>140</y>
+     <width>200</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_controlState1">
+   <property name="geometry">
+    <rect>
+     <x>125</x>
+     <y>140</y>
+     <width>180</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_setTemperature4">
+   <property name="geometry">
+    <rect>
+     <x>700</x>
+     <y>180</y>
+     <width>180</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_setTemperature3">
+   <property name="geometry">
+    <rect>
+     <x>500</x>
+     <y>180</y>
+     <width>200</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_setTemperature1">
+   <property name="geometry">
+    <rect>
+     <x>125</x>
+     <y>180</y>
+     <width>180</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_setTemperature2">
+   <property name="geometry">
+    <rect>
+     <x>305</x>
+     <y>180</y>
+     <width>195</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_setTemperature">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>180</y>
+     <width>125</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">	font: 16px, &quot;SimHei&quot;;	</string>
+   </property>
+   <property name="text">
+    <string>设置温度(℃)</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_control4">
+   <property name="geometry">
+    <rect>
+     <x>700</x>
+     <y>220</y>
+     <width>180</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_control3">
+   <property name="geometry">
+    <rect>
+     <x>500</x>
+     <y>220</y>
+     <width>200</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_control1">
+   <property name="geometry">
+    <rect>
+     <x>125</x>
+     <y>220</y>
+     <width>180</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_innerTemperature">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>220</y>
+     <width>125</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">	font: 16px, &quot;SimHei&quot;;	</string>
+   </property>
+   <property name="text">
+    <string>控制模式</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_control2">
+   <property name="geometry">
+    <rect>
+     <x>305</x>
+     <y>220</y>
+     <width>195</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_pressure">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>260</y>
+     <width>125</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string>压缩机</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_conden">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>300</y>
+     <width>125</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string>冷凝机</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_vent">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>340</y>
+     <width>125</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string>通风机</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_preHeater">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>380</y>
+     <width>125</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string>预热器</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_inputTemperature">
+   <property name="geometry">
+    <rect>
+     <x>600</x>
+     <y>500</y>
+     <width>181</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>510</x>
+     <y>500</y>
+     <width>81</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-color:black;</string>
+   </property>
+   <property name="text">
+    <string>设置温度</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_reduse">
+   <property name="geometry">
+    <rect>
+     <x>790</x>
+     <y>500</y>
+     <width>61</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>▼</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_add">
+   <property name="geometry">
+    <rect>
+     <x>860</x>
+     <y>500</y>
+     <width>61</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>▲</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_confirm">
+   <property name="geometry">
+    <rect>
+     <x>930</x>
+     <y>500</y>
+     <width>80</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>确定</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_halfHeat">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>560</y>
+     <width>85</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>半暖</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_halfCold">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>500</y>
+     <width>85</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>半冷</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_wholeCold">
+   <property name="geometry">
+    <rect>
+     <x>105</x>
+     <y>500</y>
+     <width>85</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>全冷</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_wholeHeat">
+   <property name="geometry">
+    <rect>
+     <x>105</x>
+     <y>560</y>
+     <width>85</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>全暖</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_autoCold">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>500</y>
+     <width>85</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>自动制冷</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_autoHeat">
+   <property name="geometry">
+    <rect>
+     <x>295</x>
+     <y>500</y>
+     <width>85</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>自动制暖</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_Cease">
+   <property name="geometry">
+    <rect>
+     <x>390</x>
+     <y>500</y>
+     <width>85</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>停止</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_mergencyVent">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>560</y>
+     <width>85</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>紧急通风</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_Vent">
+   <property name="geometry">
+    <rect>
+     <x>295</x>
+     <y>560</y>
+     <width>85</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>通风</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_pressure1_1">
+   <property name="geometry">
+    <rect>
+     <x>125</x>
+     <y>260</y>
+     <width>45</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>1</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_pressure1_2">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>260</y>
+     <width>45</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>2</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_pressure1_3">
+   <property name="geometry">
+    <rect>
+     <x>215</x>
+     <y>260</y>
+     <width>45</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>3</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_pressure1_4">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>260</y>
+     <width>45</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>4</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_pressure2_4">
+   <property name="geometry">
+    <rect>
+     <x>451</x>
+     <y>260</y>
+     <width>49</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>4</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_pressure2_3">
+   <property name="geometry">
+    <rect>
+     <x>403</x>
+     <y>260</y>
+     <width>48</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>3</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_pressure2_1">
+   <property name="geometry">
+    <rect>
+     <x>305</x>
+     <y>260</y>
+     <width>49</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>1</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_pressure2_2">
+   <property name="geometry">
+    <rect>
+     <x>354</x>
+     <y>260</y>
+     <width>49</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>2</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_pressure3_4">
+   <property name="geometry">
+    <rect>
+     <x>650</x>
+     <y>260</y>
+     <width>50</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>4</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_pressure3_2">
+   <property name="geometry">
+    <rect>
+     <x>550</x>
+     <y>260</y>
+     <width>50</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>2</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_pressure3_1">
+   <property name="geometry">
+    <rect>
+     <x>500</x>
+     <y>260</y>
+     <width>50</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>1</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_pressure3_3">
+   <property name="geometry">
+    <rect>
+     <x>600</x>
+     <y>260</y>
+     <width>50</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>3</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_pressure4_4">
+   <property name="geometry">
+    <rect>
+     <x>835</x>
+     <y>260</y>
+     <width>45</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>4</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_pressure4_1">
+   <property name="geometry">
+    <rect>
+     <x>700</x>
+     <y>260</y>
+     <width>45</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>1</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_pressure4_3">
+   <property name="geometry">
+    <rect>
+     <x>790</x>
+     <y>260</y>
+     <width>45</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>3</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_pressure4_2">
+   <property name="geometry">
+    <rect>
+     <x>745</x>
+     <y>260</y>
+     <width>45</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>2</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_conden4_4">
+   <property name="geometry">
+    <rect>
+     <x>835</x>
+     <y>300</y>
+     <width>45</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>4</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_conden3_1">
+   <property name="geometry">
+    <rect>
+     <x>500</x>
+     <y>300</y>
+     <width>50</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>1</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_conden3_4">
+   <property name="geometry">
+    <rect>
+     <x>650</x>
+     <y>300</y>
+     <width>50</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>4</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_conden4_1">
+   <property name="geometry">
+    <rect>
+     <x>700</x>
+     <y>300</y>
+     <width>45</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>1</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_conden3_3">
+   <property name="geometry">
+    <rect>
+     <x>600</x>
+     <y>300</y>
+     <width>50</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>3</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_conden4_2">
+   <property name="geometry">
+    <rect>
+     <x>745</x>
+     <y>300</y>
+     <width>45</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>2</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_conden2_2">
+   <property name="geometry">
+    <rect>
+     <x>354</x>
+     <y>300</y>
+     <width>49</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>2</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_conden4_3">
+   <property name="geometry">
+    <rect>
+     <x>790</x>
+     <y>300</y>
+     <width>45</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>3</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_conden1_4">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>300</y>
+     <width>45</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>4</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_conden2_4">
+   <property name="geometry">
+    <rect>
+     <x>451</x>
+     <y>300</y>
+     <width>49</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>4</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_conden1_3">
+   <property name="geometry">
+    <rect>
+     <x>215</x>
+     <y>300</y>
+     <width>45</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>3</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_conden2_1">
+   <property name="geometry">
+    <rect>
+     <x>305</x>
+     <y>300</y>
+     <width>49</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>1</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_conden3_2">
+   <property name="geometry">
+    <rect>
+     <x>550</x>
+     <y>300</y>
+     <width>50</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>2</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_conden1_1">
+   <property name="geometry">
+    <rect>
+     <x>125</x>
+     <y>300</y>
+     <width>45</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>1</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_conden1_2">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>300</y>
+     <width>45</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>2</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_conden2_3">
+   <property name="geometry">
+    <rect>
+     <x>403</x>
+     <y>300</y>
+     <width>48</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>3</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_vent4_4">
+   <property name="geometry">
+    <rect>
+     <x>835</x>
+     <y>340</y>
+     <width>45</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>4</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_vent4_3">
+   <property name="geometry">
+    <rect>
+     <x>790</x>
+     <y>340</y>
+     <width>45</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>3</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_vent2_1">
+   <property name="geometry">
+    <rect>
+     <x>305</x>
+     <y>340</y>
+     <width>49</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>1</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_vent4_1">
+   <property name="geometry">
+    <rect>
+     <x>700</x>
+     <y>340</y>
+     <width>45</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>1</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_vent2_3">
+   <property name="geometry">
+    <rect>
+     <x>403</x>
+     <y>340</y>
+     <width>48</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>3</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_vent1_3">
+   <property name="geometry">
+    <rect>
+     <x>215</x>
+     <y>340</y>
+     <width>45</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>3</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_vent3_1">
+   <property name="geometry">
+    <rect>
+     <x>500</x>
+     <y>340</y>
+     <width>50</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>1</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_vent3_4">
+   <property name="geometry">
+    <rect>
+     <x>650</x>
+     <y>340</y>
+     <width>50</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>4</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_vent1_4">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>340</y>
+     <width>45</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>4</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_vent2_4">
+   <property name="geometry">
+    <rect>
+     <x>451</x>
+     <y>340</y>
+     <width>49</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>4</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_vent3_2">
+   <property name="geometry">
+    <rect>
+     <x>550</x>
+     <y>340</y>
+     <width>50</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>2</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_vent1_2">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>340</y>
+     <width>45</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>2</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_vent4_2">
+   <property name="geometry">
+    <rect>
+     <x>745</x>
+     <y>340</y>
+     <width>45</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>2</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_vent2_2">
+   <property name="geometry">
+    <rect>
+     <x>354</x>
+     <y>340</y>
+     <width>49</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>2</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_vent3_3">
+   <property name="geometry">
+    <rect>
+     <x>600</x>
+     <y>340</y>
+     <width>50</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>3</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_vent1_1">
+   <property name="geometry">
+    <rect>
+     <x>125</x>
+     <y>340</y>
+     <width>45</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>1</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_preHeater4_4">
+   <property name="geometry">
+    <rect>
+     <x>835</x>
+     <y>380</y>
+     <width>45</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>4</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_preHeater4_1">
+   <property name="geometry">
+    <rect>
+     <x>700</x>
+     <y>380</y>
+     <width>45</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>1</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_preHeater2_1">
+   <property name="geometry">
+    <rect>
+     <x>305</x>
+     <y>380</y>
+     <width>49</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>1</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_preHeater3_2">
+   <property name="geometry">
+    <rect>
+     <x>550</x>
+     <y>380</y>
+     <width>50</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>2</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_preHeater1_2">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>380</y>
+     <width>45</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>2</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_preHeater2_2">
+   <property name="geometry">
+    <rect>
+     <x>354</x>
+     <y>380</y>
+     <width>49</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>2</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_preHeater2_3">
+   <property name="geometry">
+    <rect>
+     <x>403</x>
+     <y>380</y>
+     <width>48</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>3</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_preHeater1_1">
+   <property name="geometry">
+    <rect>
+     <x>125</x>
+     <y>380</y>
+     <width>45</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>1</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_preHeater4_2">
+   <property name="geometry">
+    <rect>
+     <x>745</x>
+     <y>380</y>
+     <width>45</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>2</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_preHeater1_4">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>380</y>
+     <width>45</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>4</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_preHeater3_3">
+   <property name="geometry">
+    <rect>
+     <x>600</x>
+     <y>380</y>
+     <width>50</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>3</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_preHeater4_3">
+   <property name="geometry">
+    <rect>
+     <x>790</x>
+     <y>380</y>
+     <width>45</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>3</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_preHeater3_4">
+   <property name="geometry">
+    <rect>
+     <x>650</x>
+     <y>380</y>
+     <width>50</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>4</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_preHeater3_1">
+   <property name="geometry">
+    <rect>
+     <x>500</x>
+     <y>380</y>
+     <width>50</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>1</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_preHeater1_3">
+   <property name="geometry">
+    <rect>
+     <x>215</x>
+     <y>380</y>
+     <width>45</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>3</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_preHeater2_4">
+   <property name="geometry">
+    <rect>
+     <x>451</x>
+     <y>380</y>
+     <width>49</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>4</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_wholeCar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>100</y>
+     <width>125</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 20px, &quot;SimHei&quot;;
+color: black;
+background-color: rgb(250, 250, 250);
+border-radius: 0px;
+border: 2px solid rgb(150, 150, 150);</string>
+   </property>
+   <property name="text">
+    <string>整车</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_car1">
+   <property name="geometry">
+    <rect>
+     <x>125</x>
+     <y>100</y>
+     <width>180</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 20px, &quot;SimHei&quot;;
+color: black;
+background-color: rgb(250, 250, 250);
+border-radius: 0px;
+border: 2px solid rgb(150, 150, 150);</string>
+   </property>
+   <property name="text">
+    <string>1</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_car2">
+   <property name="geometry">
+    <rect>
+     <x>305</x>
+     <y>100</y>
+     <width>195</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 20px, &quot;SimHei&quot;;
+color: black;
+background-color: rgb(250, 250, 250);
+border-radius: 0px;
+border: 2px solid rgb(150, 150, 150);</string>
+   </property>
+   <property name="text">
+    <string>2</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_car3">
+   <property name="geometry">
+    <rect>
+     <x>500</x>
+     <y>100</y>
+     <width>200</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 20px, &quot;SimHei&quot;;
+color: black;
+background-color: rgb(250, 250, 250);
+border-radius: 0px;
+border: 2px solid rgb(150, 150, 150);</string>
+   </property>
+   <property name="text">
+    <string>3</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_car4">
+   <property name="geometry">
+    <rect>
+     <x>700</x>
+     <y>100</y>
+     <width>180</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 20px, &quot;SimHei&quot;;
+color: black;
+background-color: rgb(250, 250, 250);
+border-radius: 0px;
+border: 2px solid rgb(150, 150, 150);</string>
+   </property>
+   <property name="text">
+    <string>4</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>600</x>
+     <y>460</y>
+     <width>281</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 15px, &quot;SimHei&quot;;
+border:0px;
+color:red;</string>
+   </property>
+   <property name="text">
+    <string>在自动制冷／自动制暖模式下可设置温度</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_remindInfo">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>460</y>
+     <width>281</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 15px, &quot;SimHei&quot;;
+border:0px;
+color:red;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_remindInfo1">
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>460</y>
+     <width>281</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 15px, &quot;SimHei&quot;;
+border:0px;
+color:red;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_EmergencyBroadcast">
+   <property name="geometry">
+    <rect>
+     <x>890</x>
+     <y>560</y>
+     <width>120</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>紧急广播</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_AllOpen">
+   <property name="geometry">
+    <rect>
+     <x>900</x>
+     <y>340</y>
+     <width>95</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>全开</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_23NewWind">
+   <property name="geometry">
+    <rect>
+     <x>900</x>
+     <y>220</y>
+     <width>95</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>2/3新风</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_13NewWind">
+   <property name="geometry">
+    <rect>
+     <x>900</x>
+     <y>160</y>
+     <width>95</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>1/3新风</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_ALLClose">
+   <property name="geometry">
+    <rect>
+     <x>900</x>
+     <y>280</y>
+     <width>95</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>全关</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_Speed_low">
+   <property name="geometry">
+    <rect>
+     <x>390</x>
+     <y>560</y>
+     <width>85</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>低速</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_autowind">
+   <property name="geometry">
+    <rect>
+     <x>900</x>
+     <y>400</y>
+     <width>95</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>自动控制</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>890</x>
+     <y>100</y>
+     <width>120</width>
+     <height>360</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>905</x>
+     <y>115</y>
+     <width>85</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">	color: white;
+	border: 2px groove, gray;
+    border-color: black;
+	font: 18px, &quot;SimHei&quot;;	</string>
+   </property>
+   <property name="text">
+    <string>风量设置</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_Speed_high">
+   <property name="geometry">
+    <rect>
+     <x>485</x>
+     <y>560</y>
+     <width>85</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>高速</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>385</x>
+     <y>550</y>
+     <width>191</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <zorder>label_2</zorder>
+  <zorder>label_5</zorder>
+  <zorder>label_controlState4</zorder>
+  <zorder>label_controlState2</zorder>
+  <zorder>label_controlState</zorder>
+  <zorder>label_controlState3</zorder>
+  <zorder>label_controlState1</zorder>
+  <zorder>label_setTemperature4</zorder>
+  <zorder>label_setTemperature3</zorder>
+  <zorder>label_setTemperature1</zorder>
+  <zorder>label_setTemperature2</zorder>
+  <zorder>label_setTemperature</zorder>
+  <zorder>label_control4</zorder>
+  <zorder>label_control3</zorder>
+  <zorder>label_control1</zorder>
+  <zorder>label_innerTemperature</zorder>
+  <zorder>label_control2</zorder>
+  <zorder>label_pressure</zorder>
+  <zorder>label_conden</zorder>
+  <zorder>label_vent</zorder>
+  <zorder>label_preHeater</zorder>
+  <zorder>label_inputTemperature</zorder>
+  <zorder>label_4</zorder>
+  <zorder>btn_reduse</zorder>
+  <zorder>btn_add</zorder>
+  <zorder>btn_confirm</zorder>
+  <zorder>btn_halfHeat</zorder>
+  <zorder>btn_halfCold</zorder>
+  <zorder>btn_wholeCold</zorder>
+  <zorder>btn_wholeHeat</zorder>
+  <zorder>btn_autoCold</zorder>
+  <zorder>btn_autoHeat</zorder>
+  <zorder>btn_Cease</zorder>
+  <zorder>btn_mergencyVent</zorder>
+  <zorder>btn_Vent</zorder>
+  <zorder>label_pressure1_1</zorder>
+  <zorder>label_pressure1_2</zorder>
+  <zorder>label_pressure1_3</zorder>
+  <zorder>label_pressure1_4</zorder>
+  <zorder>label_pressure2_4</zorder>
+  <zorder>label_pressure2_3</zorder>
+  <zorder>label_pressure2_1</zorder>
+  <zorder>label_pressure2_2</zorder>
+  <zorder>label_pressure3_4</zorder>
+  <zorder>label_pressure3_2</zorder>
+  <zorder>label_pressure3_1</zorder>
+  <zorder>label_pressure3_3</zorder>
+  <zorder>label_pressure4_4</zorder>
+  <zorder>label_pressure4_1</zorder>
+  <zorder>label_pressure4_3</zorder>
+  <zorder>label_pressure4_2</zorder>
+  <zorder>label_conden4_4</zorder>
+  <zorder>label_conden3_1</zorder>
+  <zorder>label_conden3_4</zorder>
+  <zorder>label_conden4_1</zorder>
+  <zorder>label_conden3_3</zorder>
+  <zorder>label_conden4_2</zorder>
+  <zorder>label_conden2_2</zorder>
+  <zorder>label_conden4_3</zorder>
+  <zorder>label_conden1_4</zorder>
+  <zorder>label_conden2_4</zorder>
+  <zorder>label_conden1_3</zorder>
+  <zorder>label_conden2_1</zorder>
+  <zorder>label_conden3_2</zorder>
+  <zorder>label_conden1_1</zorder>
+  <zorder>label_conden1_2</zorder>
+  <zorder>label_conden2_3</zorder>
+  <zorder>label_vent4_4</zorder>
+  <zorder>label_vent4_3</zorder>
+  <zorder>label_vent2_1</zorder>
+  <zorder>label_vent4_1</zorder>
+  <zorder>label_vent2_3</zorder>
+  <zorder>label_vent1_3</zorder>
+  <zorder>label_vent3_1</zorder>
+  <zorder>label_vent3_4</zorder>
+  <zorder>label_vent1_4</zorder>
+  <zorder>label_vent2_4</zorder>
+  <zorder>label_vent3_2</zorder>
+  <zorder>label_vent1_2</zorder>
+  <zorder>label_vent4_2</zorder>
+  <zorder>label_vent2_2</zorder>
+  <zorder>label_vent3_3</zorder>
+  <zorder>label_vent1_1</zorder>
+  <zorder>label_preHeater4_4</zorder>
+  <zorder>label_preHeater4_1</zorder>
+  <zorder>label_preHeater2_1</zorder>
+  <zorder>label_preHeater3_2</zorder>
+  <zorder>label_preHeater1_2</zorder>
+  <zorder>label_preHeater2_2</zorder>
+  <zorder>label_preHeater2_3</zorder>
+  <zorder>label_preHeater1_1</zorder>
+  <zorder>label_preHeater4_2</zorder>
+  <zorder>label_preHeater1_4</zorder>
+  <zorder>label_preHeater3_3</zorder>
+  <zorder>label_preHeater4_3</zorder>
+  <zorder>label_preHeater3_4</zorder>
+  <zorder>label_preHeater3_1</zorder>
+  <zorder>label_preHeater1_3</zorder>
+  <zorder>label_preHeater2_4</zorder>
+  <zorder>btn_wholeCar</zorder>
+  <zorder>btn_car1</zorder>
+  <zorder>btn_car2</zorder>
+  <zorder>btn_car3</zorder>
+  <zorder>btn_car4</zorder>
+  <zorder>label</zorder>
+  <zorder>label_remindInfo</zorder>
+  <zorder>label_remindInfo1</zorder>
+  <zorder>btn_EmergencyBroadcast</zorder>
+  <zorder>btn_AllOpen</zorder>
+  <zorder>btn_23NewWind</zorder>
+  <zorder>btn_13NewWind</zorder>
+  <zorder>btn_ALLClose</zorder>
+  <zorder>btn_Speed_low</zorder>
+  <zorder>btn_autowind</zorder>
+  <zorder>label_3</zorder>
+  <zorder>btn_Speed_high</zorder>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,2262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>RunStatePage</class>
+ <widget class="QWidget" name="RunStatePage">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1024</width>
+    <height>618</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QLabel
+{
+	color: white;
+	border: 2px groove, gray;
+    border-color: gray;
+	font: 20px, &quot;SimHei&quot;;	
+}
+
+QWidget
+{
+	background-color: black;
+}
+
+QPushButton
+{
+	font: 20px, &quot;SimHei&quot;;
+    color: black;
+	background-color: rgb(250, 250, 250);
+	border-radius: 5px;
+}</string>
+  </property>
+  <widget class="QLabel" name="label_vehicleNo">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>102</y>
+     <width>157</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>车号</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_assistantState">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>141</y>
+     <width>157</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>辅助系统状态</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_tractionState">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>180</y>
+     <width>157</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>牵引系统状态</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_brakeState">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>219</y>
+     <width>157</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>制动状态</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_valve1">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>278</y>
+     <width>157</width>
+     <height>104</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>门状态</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_innerTemperature">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>382</y>
+     <width>157</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>车内温度(℃)</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_AirPressor">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>450</y>
+     <width>157</width>
+     <height>70</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>空压机状态</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_car1No">
+   <property name="geometry">
+    <rect>
+     <x>176</x>
+     <y>102</y>
+     <width>190</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>1</string>
+   </property>
+   <property name="scaledContents">
+    <bool>false</bool>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_car1AssistantState">
+   <property name="geometry">
+    <rect>
+     <x>176</x>
+     <y>141</y>
+     <width>190</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_car1TractionState">
+   <property name="geometry">
+    <rect>
+     <x>176</x>
+     <y>180</y>
+     <width>190</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>-- --</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_car1Brake1">
+   <property name="geometry">
+    <rect>
+     <x>176</x>
+     <y>244</y>
+     <width>95</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">	color: white;
+	border: 2px groove, gray;
+    border-color: gray;
+	font: 15px, &quot;SimHei&quot;;	</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_car1Valve1">
+   <property name="geometry">
+    <rect>
+     <x>176</x>
+     <y>279</y>
+     <width>47</width>
+     <height>52</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75 25px, &quot;SimHei&quot;;	</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_car1Valve2">
+   <property name="geometry">
+    <rect>
+     <x>176</x>
+     <y>330</y>
+     <width>47</width>
+     <height>52</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75 25px, &quot;SimHei&quot;;	</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_car1Valve5">
+   <property name="geometry">
+    <rect>
+     <x>270</x>
+     <y>279</y>
+     <width>47</width>
+     <height>52</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75 25px, &quot;SimHei&quot;;	</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_car1Valve6">
+   <property name="geometry">
+    <rect>
+     <x>270</x>
+     <y>330</y>
+     <width>47</width>
+     <height>52</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75 25px, &quot;SimHei&quot;;	</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_car1InnerTemperature">
+   <property name="geometry">
+    <rect>
+     <x>176</x>
+     <y>382</y>
+     <width>190</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_APAbnormal1">
+   <property name="geometry">
+    <rect>
+     <x>176</x>
+     <y>450</y>
+     <width>95</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>供电异常</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_car2No">
+   <property name="geometry">
+    <rect>
+     <x>364</x>
+     <y>102</y>
+     <width>210</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>2</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_car2AssistantState">
+   <property name="geometry">
+    <rect>
+     <x>364</x>
+     <y>141</y>
+     <width>210</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>-- --</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_car2Brake1">
+   <property name="geometry">
+    <rect>
+     <x>364</x>
+     <y>244</y>
+     <width>105</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">	color: white;
+	border: 2px groove, gray;
+    border-color: gray;
+	font: 12px, &quot;SimHei&quot;;	</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_car2InnerTemperature">
+   <property name="geometry">
+    <rect>
+     <x>364</x>
+     <y>382</y>
+     <width>210</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_car3No">
+   <property name="geometry">
+    <rect>
+     <x>573</x>
+     <y>102</y>
+     <width>210</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>3</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_car3AssistantState">
+   <property name="geometry">
+    <rect>
+     <x>573</x>
+     <y>141</y>
+     <width>210</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>-- --</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_car3Brake2">
+   <property name="geometry">
+    <rect>
+     <x>573</x>
+     <y>244</y>
+     <width>105</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">	color: white;
+	border: 2px groove, gray;
+    border-color: gray;
+	font: 12px, &quot;SimHei&quot;;	</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_car3InnerTemperature">
+   <property name="geometry">
+    <rect>
+     <x>573</x>
+     <y>382</y>
+     <width>210</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_car4No">
+   <property name="geometry">
+    <rect>
+     <x>781</x>
+     <y>102</y>
+     <width>180</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>4</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_car4AssistantState">
+   <property name="geometry">
+    <rect>
+     <x>781</x>
+     <y>141</y>
+     <width>180</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_car4TractionState">
+   <property name="geometry">
+    <rect>
+     <x>781</x>
+     <y>180</y>
+     <width>180</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>-- --</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_car4Brake1">
+   <property name="geometry">
+    <rect>
+     <x>871</x>
+     <y>244</y>
+     <width>90</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">	color: white;
+	border: 2px groove, gray;
+    border-color: gray;
+	font: 12px, &quot;SimHei&quot;;	</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_car4InnerTemperature">
+   <property name="geometry">
+    <rect>
+     <x>781</x>
+     <y>382</y>
+     <width>180</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_APAbnormal4">
+   <property name="geometry">
+    <rect>
+     <x>781</x>
+     <y>450</y>
+     <width>90</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>供电异常</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_car2Brake2">
+   <property name="geometry">
+    <rect>
+     <x>469</x>
+     <y>244</y>
+     <width>105</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">	color: white;
+	border: 2px groove, gray;
+    border-color: gray;
+	font: 12px, &quot;SimHei&quot;;	</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_car3Brake1">
+   <property name="geometry">
+    <rect>
+     <x>677</x>
+     <y>244</y>
+     <width>105</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">	color: white;
+	border: 2px groove, gray;
+    border-color: gray;
+	font: 12px, &quot;SimHei&quot;;	</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_car4Brake2">
+   <property name="geometry">
+    <rect>
+     <x>781</x>
+     <y>244</y>
+     <width>90</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">	color: white;
+	border: 2px groove, gray;
+    border-color: gray;
+	font: 12px, &quot;SimHei&quot;;	</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_car1Brake2">
+   <property name="geometry">
+    <rect>
+     <x>270</x>
+     <y>244</y>
+     <width>96</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">	color: white;
+	border: 2px groove, gray;
+    border-color: gray;
+	font: 12px, &quot;SimHei&quot;;	</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_car4outerTemperature">
+   <property name="geometry">
+    <rect>
+     <x>781</x>
+     <y>416</y>
+     <width>180</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_car3outerTemperature">
+   <property name="geometry">
+    <rect>
+     <x>573</x>
+     <y>416</y>
+     <width>210</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_car1outerTemperature">
+   <property name="geometry">
+    <rect>
+     <x>176</x>
+     <y>416</y>
+     <width>190</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_car2outerTemperature">
+   <property name="geometry">
+    <rect>
+     <x>364</x>
+     <y>416</y>
+     <width>210</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_outerTemperature">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>416</y>
+     <width>157</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>车外温度(℃)</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_car1Valve8">
+   <property name="geometry">
+    <rect>
+     <x>317</x>
+     <y>330</y>
+     <width>48</width>
+     <height>52</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75 25px, &quot;SimHei&quot;;	</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_car1Valve3">
+   <property name="geometry">
+    <rect>
+     <x>222</x>
+     <y>279</y>
+     <width>48</width>
+     <height>52</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75 25px, &quot;SimHei&quot;;	</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_car1Valve7">
+   <property name="geometry">
+    <rect>
+     <x>317</x>
+     <y>279</y>
+     <width>48</width>
+     <height>52</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75 25px, &quot;SimHei&quot;;	</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_car1Valve4">
+   <property name="geometry">
+    <rect>
+     <x>222</x>
+     <y>330</y>
+     <width>48</width>
+     <height>52</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75 25px, &quot;SimHei&quot;;	</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_car2Valve4">
+   <property name="geometry">
+    <rect>
+     <x>417</x>
+     <y>330</y>
+     <width>52</width>
+     <height>52</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75 25px, &quot;SimHei&quot;;	</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_car2Valve7">
+   <property name="geometry">
+    <rect>
+     <x>522</x>
+     <y>279</y>
+     <width>52</width>
+     <height>52</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75 25px, &quot;SimHei&quot;;	</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_car2Valve8">
+   <property name="geometry">
+    <rect>
+     <x>522</x>
+     <y>330</y>
+     <width>52</width>
+     <height>52</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75 25px, &quot;SimHei&quot;;	</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_car2Valve1">
+   <property name="geometry">
+    <rect>
+     <x>364</x>
+     <y>279</y>
+     <width>53</width>
+     <height>52</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75 25px, &quot;SimHei&quot;;	</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_car2Valve5">
+   <property name="geometry">
+    <rect>
+     <x>469</x>
+     <y>279</y>
+     <width>53</width>
+     <height>52</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75 25px, &quot;SimHei&quot;;	</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_car2Valve6">
+   <property name="geometry">
+    <rect>
+     <x>469</x>
+     <y>330</y>
+     <width>53</width>
+     <height>52</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75 25px, &quot;SimHei&quot;;	</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_car2Valve3">
+   <property name="geometry">
+    <rect>
+     <x>417</x>
+     <y>279</y>
+     <width>52</width>
+     <height>52</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75 25px, &quot;SimHei&quot;;	</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_car2Valve2">
+   <property name="geometry">
+    <rect>
+     <x>364</x>
+     <y>330</y>
+     <width>53</width>
+     <height>52</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75 25px, &quot;SimHei&quot;;	</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_car3Valve4">
+   <property name="geometry">
+    <rect>
+     <x>677</x>
+     <y>279</y>
+     <width>53</width>
+     <height>52</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75 25px, &quot;SimHei&quot;;	</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_car3Valve7">
+   <property name="geometry">
+    <rect>
+     <x>573</x>
+     <y>330</y>
+     <width>53</width>
+     <height>52</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75 25px, &quot;SimHei&quot;;	</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_car3Valve5">
+   <property name="geometry">
+    <rect>
+     <x>626</x>
+     <y>330</y>
+     <width>52</width>
+     <height>52</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75 25px, &quot;SimHei&quot;;	</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_car3Valve2">
+   <property name="geometry">
+    <rect>
+     <x>730</x>
+     <y>279</y>
+     <width>52</width>
+     <height>52</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75 25px, &quot;SimHei&quot;;	</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_car3Valve6">
+   <property name="geometry">
+    <rect>
+     <x>626</x>
+     <y>279</y>
+     <width>52</width>
+     <height>52</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75 25px, &quot;SimHei&quot;;	</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_car3Valve8">
+   <property name="geometry">
+    <rect>
+     <x>573</x>
+     <y>279</y>
+     <width>53</width>
+     <height>52</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75 25px, &quot;SimHei&quot;;	</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_car3Valve3">
+   <property name="geometry">
+    <rect>
+     <x>677</x>
+     <y>330</y>
+     <width>53</width>
+     <height>52</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75 25px, &quot;SimHei&quot;;	</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_car3Valve1">
+   <property name="geometry">
+    <rect>
+     <x>730</x>
+     <y>330</y>
+     <width>52</width>
+     <height>52</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75 25px, &quot;SimHei&quot;;	</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_car4Valve1">
+   <property name="geometry">
+    <rect>
+     <x>916</x>
+     <y>330</y>
+     <width>45</width>
+     <height>52</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75 25px, &quot;SimHei&quot;;	</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_car4Valve3">
+   <property name="geometry">
+    <rect>
+     <x>871</x>
+     <y>330</y>
+     <width>45</width>
+     <height>52</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75 25px, &quot;SimHei&quot;;	</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_car4Valve8">
+   <property name="geometry">
+    <rect>
+     <x>781</x>
+     <y>279</y>
+     <width>45</width>
+     <height>52</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75 25px, &quot;SimHei&quot;;	</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_car4Valve4">
+   <property name="geometry">
+    <rect>
+     <x>871</x>
+     <y>279</y>
+     <width>45</width>
+     <height>52</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75 25px, &quot;SimHei&quot;;	</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_car4Valve5">
+   <property name="geometry">
+    <rect>
+     <x>826</x>
+     <y>330</y>
+     <width>45</width>
+     <height>52</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75 25px, &quot;SimHei&quot;;	</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_car4Valve2">
+   <property name="geometry">
+    <rect>
+     <x>916</x>
+     <y>279</y>
+     <width>45</width>
+     <height>52</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75 25px, &quot;SimHei&quot;;	</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_car4Valve6">
+   <property name="geometry">
+    <rect>
+     <x>826</x>
+     <y>279</y>
+     <width>45</width>
+     <height>52</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75 25px, &quot;SimHei&quot;;	</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_car4Valve7">
+   <property name="geometry">
+    <rect>
+     <x>781</x>
+     <y>330</y>
+     <width>45</width>
+     <height>52</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 75 25px, &quot;SimHei&quot;;	</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_car3TractionSystem1">
+   <property name="geometry">
+    <rect>
+     <x>729</x>
+     <y>180</y>
+     <width>53</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_car3TractionSystem3">
+   <property name="geometry">
+    <rect>
+     <x>625</x>
+     <y>180</y>
+     <width>52</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_car2TractionSystem2">
+   <property name="geometry">
+    <rect>
+     <x>416</x>
+     <y>180</y>
+     <width>53</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_car2TractionSystem4">
+   <property name="geometry">
+    <rect>
+     <x>520</x>
+     <y>180</y>
+     <width>53</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_car2TractionSystem3">
+   <property name="geometry">
+    <rect>
+     <x>469</x>
+     <y>180</y>
+     <width>51</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_car3TractionSystem2">
+   <property name="geometry">
+    <rect>
+     <x>677</x>
+     <y>180</y>
+     <width>52</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_car3TractionSystem4">
+   <property name="geometry">
+    <rect>
+     <x>573</x>
+     <y>180</y>
+     <width>52</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_car2TractionSystem1">
+   <property name="geometry">
+    <rect>
+     <x>364</x>
+     <y>180</y>
+     <width>52</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_EmergencyBroadcast">
+   <property name="geometry">
+    <rect>
+     <x>860</x>
+     <y>570</y>
+     <width>130</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>紧急广播</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_car3RidingRate">
+   <property name="geometry">
+    <rect>
+     <x>573</x>
+     <y>520</y>
+     <width>210</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_ridingRate">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>520</y>
+     <width>157</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>乘车率</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_car1RidingRate">
+   <property name="geometry">
+    <rect>
+     <x>176</x>
+     <y>520</y>
+     <width>190</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_car4RidingRate">
+   <property name="geometry">
+    <rect>
+     <x>781</x>
+     <y>520</y>
+     <width>180</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_car2RidingRate">
+   <property name="geometry">
+    <rect>
+     <x>364</x>
+     <y>520</y>
+     <width>210</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_APOverLoad1">
+   <property name="geometry">
+    <rect>
+     <x>176</x>
+     <y>485</y>
+     <width>95</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>热过载</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_APOverLoad4">
+   <property name="geometry">
+    <rect>
+     <x>781</x>
+     <y>485</y>
+     <width>90</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>热过载</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_APRun1">
+   <property name="geometry">
+    <rect>
+     <x>270</x>
+     <y>485</y>
+     <width>95</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>运行</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_APPreStart1">
+   <property name="geometry">
+    <rect>
+     <x>270</x>
+     <y>450</y>
+     <width>95</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>预启动</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_APPreStart4">
+   <property name="geometry">
+    <rect>
+     <x>871</x>
+     <y>450</y>
+     <width>90</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>预启动</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_APRun4">
+   <property name="geometry">
+    <rect>
+     <x>871</x>
+     <y>485</y>
+     <width>90</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>运行</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_car2RidingRate_2">
+   <property name="geometry">
+    <rect>
+     <x>364</x>
+     <y>450</y>
+     <width>210</width>
+     <height>70</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>-- --</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_car3RidingRate_2">
+   <property name="geometry">
+    <rect>
+     <x>573</x>
+     <y>450</y>
+     <width>210</width>
+     <height>70</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>-- --</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>295</y>
+     <width>20</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>1</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>345</y>
+     <width>20</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>2</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>235</x>
+     <y>295</y>
+     <width>20</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>3</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>235</x>
+     <y>345</y>
+     <width>20</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>4</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>284</x>
+     <y>295</y>
+     <width>20</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>5</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_6">
+   <property name="geometry">
+    <rect>
+     <x>284</x>
+     <y>345</y>
+     <width>20</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>6</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_7">
+   <property name="geometry">
+    <rect>
+     <x>331</x>
+     <y>295</y>
+     <width>20</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>7</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_8">
+   <property name="geometry">
+    <rect>
+     <x>331</x>
+     <y>345</y>
+     <width>20</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>8</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_9">
+   <property name="geometry">
+    <rect>
+     <x>538</x>
+     <y>345</y>
+     <width>20</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>8</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_10">
+   <property name="geometry">
+    <rect>
+     <x>380</x>
+     <y>345</y>
+     <width>20</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>2</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_11">
+   <property name="geometry">
+    <rect>
+     <x>538</x>
+     <y>295</y>
+     <width>20</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>7</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_12">
+   <property name="geometry">
+    <rect>
+     <x>485</x>
+     <y>345</y>
+     <width>20</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>6</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_13">
+   <property name="geometry">
+    <rect>
+     <x>433</x>
+     <y>345</y>
+     <width>20</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>4</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_14">
+   <property name="geometry">
+    <rect>
+     <x>433</x>
+     <y>295</y>
+     <width>20</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>3</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_15">
+   <property name="geometry">
+    <rect>
+     <x>485</x>
+     <y>295</y>
+     <width>20</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>5</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_16">
+   <property name="geometry">
+    <rect>
+     <x>590</x>
+     <y>295</y>
+     <width>20</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>8</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_17">
+   <property name="geometry">
+    <rect>
+     <x>746</x>
+     <y>295</y>
+     <width>20</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>2</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_18">
+   <property name="geometry">
+    <rect>
+     <x>590</x>
+     <y>345</y>
+     <width>20</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>7</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_19">
+   <property name="geometry">
+    <rect>
+     <x>643</x>
+     <y>295</y>
+     <width>20</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>6</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_20">
+   <property name="geometry">
+    <rect>
+     <x>693</x>
+     <y>295</y>
+     <width>20</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>4</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_21">
+   <property name="geometry">
+    <rect>
+     <x>693</x>
+     <y>345</y>
+     <width>20</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>3</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_22">
+   <property name="geometry">
+    <rect>
+     <x>643</x>
+     <y>345</y>
+     <width>20</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>5</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_23">
+   <property name="geometry">
+    <rect>
+     <x>793</x>
+     <y>295</y>
+     <width>20</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>8</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_24">
+   <property name="geometry">
+    <rect>
+     <x>928</x>
+     <y>295</y>
+     <width>20</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>2</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_25">
+   <property name="geometry">
+    <rect>
+     <x>793</x>
+     <y>345</y>
+     <width>20</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>7</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_26">
+   <property name="geometry">
+    <rect>
+     <x>838</x>
+     <y>295</y>
+     <width>20</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>6</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_27">
+   <property name="geometry">
+    <rect>
+     <x>883</x>
+     <y>295</y>
+     <width>20</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>4</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_28">
+   <property name="geometry">
+    <rect>
+     <x>883</x>
+     <y>345</y>
+     <width>20</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>3</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_29">
+   <property name="geometry">
+    <rect>
+     <x>838</x>
+     <y>345</y>
+     <width>20</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>5</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_30">
+   <property name="geometry">
+    <rect>
+     <x>380</x>
+     <y>295</y>
+     <width>20</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>1</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_31">
+   <property name="geometry">
+    <rect>
+     <x>746</x>
+     <y>345</y>
+     <width>20</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>1</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_32">
+   <property name="geometry">
+    <rect>
+     <x>928</x>
+     <y>345</y>
+     <width>20</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>1</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_car2Brake2_2">
+   <property name="geometry">
+    <rect>
+     <x>469</x>
+     <y>219</y>
+     <width>105</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">	color: white;
+	border: 2px groove, gray;
+    border-color: gray;
+	font: 12px, &quot;SimHei&quot;;	</string>
+   </property>
+   <property name="text">
+    <string>2</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_car3Brake1_2">
+   <property name="geometry">
+    <rect>
+     <x>677</x>
+     <y>219</y>
+     <width>105</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">	color: white;
+	border: 2px groove, gray;
+    border-color: gray;
+	font: 12px, &quot;SimHei&quot;;	</string>
+   </property>
+   <property name="text">
+    <string>1</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_car1Brake2_2">
+   <property name="geometry">
+    <rect>
+     <x>270</x>
+     <y>219</y>
+     <width>96</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">	color: white;
+	border: 2px groove, gray;
+    border-color: gray;
+	font: 12px, &quot;SimHei&quot;;	</string>
+   </property>
+   <property name="text">
+    <string>2</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_car1Brake1_2">
+   <property name="geometry">
+    <rect>
+     <x>176</x>
+     <y>219</y>
+     <width>95</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">	color: white;
+	border: 2px groove, gray;
+    border-color: gray;
+	font: 15px, &quot;SimHei&quot;;	</string>
+   </property>
+   <property name="text">
+    <string>1</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_car4Brake2_2">
+   <property name="geometry">
+    <rect>
+     <x>781</x>
+     <y>219</y>
+     <width>90</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">	color: white;
+	border: 2px groove, gray;
+    border-color: gray;
+	font: 12px, &quot;SimHei&quot;;	</string>
+   </property>
+   <property name="text">
+    <string>2</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_car3Brake2_2">
+   <property name="geometry">
+    <rect>
+     <x>573</x>
+     <y>219</y>
+     <width>105</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">	color: white;
+	border: 2px groove, gray;
+    border-color: gray;
+	font: 12px, &quot;SimHei&quot;;	</string>
+   </property>
+   <property name="text">
+    <string>2</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_car2Brake1_2">
+   <property name="geometry">
+    <rect>
+     <x>364</x>
+     <y>219</y>
+     <width>105</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">	color: white;
+	border: 2px groove, gray;
+    border-color: gray;
+	font: 12px, &quot;SimHei&quot;;	</string>
+   </property>
+   <property name="text">
+    <string>1</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_car4Brake1_2">
+   <property name="geometry">
+    <rect>
+     <x>871</x>
+     <y>219</y>
+     <width>90</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">	color: white;
+	border: 2px groove, gray;
+    border-color: gray;
+	font: 12px, &quot;SimHei&quot;;	</string>
+   </property>
+   <property name="text">
+    <string>1</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

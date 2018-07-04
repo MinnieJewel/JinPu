@@ -1,0 +1,1744 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>VersionInfoPage</class>
+ <widget class="QWidget" name="VersionInfoPage">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1024</width>
+    <height>708</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QLabel
+{
+	color: white;
+	border: 2px groove, gray;
+    border-color: gray;
+	font: 20px, &quot;SimHei&quot;;	
+}
+
+QWidget
+{
+	background-color: black;
+}
+
+QPushButton
+{
+	font: 20px, &quot;SimHei&quot;;
+    color: black;
+	background-color: rgb(250, 250, 250);
+	border-radius: 5px;
+}</string>
+  </property>
+  <widget class="QLabel" name="label_HVAC">
+   <property name="geometry">
+    <rect>
+     <x>33</x>
+     <y>309</y>
+     <width>130</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>HVAC</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_HMI1">
+   <property name="geometry">
+    <rect>
+     <x>162</x>
+     <y>518</y>
+     <width>190</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_car1Door1_1">
+   <property name="geometry">
+    <rect>
+     <x>162</x>
+     <y>339</y>
+     <width>95</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string>256.256</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_HMI4">
+   <property name="geometry">
+    <rect>
+     <x>769</x>
+     <y>518</y>
+     <width>180</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_AX1">
+   <property name="geometry">
+    <rect>
+     <x>162</x>
+     <y>170</y>
+     <width>190</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>0.0</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_DI4">
+   <property name="geometry">
+    <rect>
+     <x>769</x>
+     <y>112</y>
+     <width>180</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>0.0</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_SIV2">
+   <property name="geometry">
+    <rect>
+     <x>351</x>
+     <y>200</y>
+     <width>210</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>-- -- </string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_AX2">
+   <property name="geometry">
+    <rect>
+     <x>351</x>
+     <y>170</y>
+     <width>210</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>-- -- </string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_SIV4">
+   <property name="geometry">
+    <rect>
+     <x>769</x>
+     <y>200</y>
+     <width>180</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_HMI2">
+   <property name="geometry">
+    <rect>
+     <x>351</x>
+     <y>518</y>
+     <width>210</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>-- -- </string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_AX4">
+   <property name="geometry">
+    <rect>
+     <x>769</x>
+     <y>170</y>
+     <width>180</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>0.0</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_AX3">
+   <property name="geometry">
+    <rect>
+     <x>560</x>
+     <y>170</y>
+     <width>210</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>-- -- </string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_car4Door1_1">
+   <property name="geometry">
+    <rect>
+     <x>769</x>
+     <y>339</y>
+     <width>90</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_DO1">
+   <property name="geometry">
+    <rect>
+     <x>162</x>
+     <y>141</y>
+     <width>190</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>0.0</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_HVAC3">
+   <property name="geometry">
+    <rect>
+     <x>560</x>
+     <y>309</y>
+     <width>210</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>0.0</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_GW3">
+   <property name="geometry">
+    <rect>
+     <x>560</x>
+     <y>83</y>
+     <width>210</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>0.0</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_FAU2">
+   <property name="geometry">
+    <rect>
+     <x>351</x>
+     <y>488</y>
+     <width>210</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>-- -- </string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_DO2">
+   <property name="geometry">
+    <rect>
+     <x>351</x>
+     <y>141</y>
+     <width>210</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>0.0</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_PIS">
+   <property name="geometry">
+    <rect>
+     <x>33</x>
+     <y>458</y>
+     <width>130</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>PIS</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_DO3">
+   <property name="geometry">
+    <rect>
+     <x>560</x>
+     <y>141</y>
+     <width>210</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>0.0</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_HMI">
+   <property name="geometry">
+    <rect>
+     <x>33</x>
+     <y>518</y>
+     <width>130</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>HMI</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_GW1">
+   <property name="geometry">
+    <rect>
+     <x>162</x>
+     <y>83</y>
+     <width>190</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>0.0</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_ATC">
+   <property name="geometry">
+    <rect>
+     <x>33</x>
+     <y>339</y>
+     <width>130</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>DOOR1</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_BCU1">
+   <property name="geometry">
+    <rect>
+     <x>162</x>
+     <y>240</y>
+     <width>399</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">	font: 15px, &quot;SimHei&quot;;	</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_PIS4">
+   <property name="geometry">
+    <rect>
+     <x>769</x>
+     <y>458</y>
+     <width>180</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>0.0.0</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_DI2">
+   <property name="geometry">
+    <rect>
+     <x>351</x>
+     <y>112</y>
+     <width>210</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>0.0</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_PIS3">
+   <property name="geometry">
+    <rect>
+     <x>560</x>
+     <y>458</y>
+     <width>210</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>-- -- </string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_BCU">
+   <property name="geometry">
+    <rect>
+     <x>33</x>
+     <y>240</y>
+     <width>130</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>BCU</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_SIV">
+   <property name="geometry">
+    <rect>
+     <x>33</x>
+     <y>200</y>
+     <width>130</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>SIV</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_car3Door1_1">
+   <property name="geometry">
+    <rect>
+     <x>560</x>
+     <y>339</y>
+     <width>105</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_DI1">
+   <property name="geometry">
+    <rect>
+     <x>162</x>
+     <y>112</y>
+     <width>190</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>0.0</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_BCU2">
+   <property name="geometry">
+    <rect>
+     <x>560</x>
+     <y>240</y>
+     <width>389</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">	font: 15px, &quot;SimHei&quot;;	</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_AX">
+   <property name="geometry">
+    <rect>
+     <x>33</x>
+     <y>170</y>
+     <width>130</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>AX</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_DO">
+   <property name="geometry">
+    <rect>
+     <x>33</x>
+     <y>141</y>
+     <width>130</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>DO</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_FAU4">
+   <property name="geometry">
+    <rect>
+     <x>769</x>
+     <y>488</y>
+     <width>180</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>0.0</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_HMI3">
+   <property name="geometry">
+    <rect>
+     <x>560</x>
+     <y>518</y>
+     <width>210</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>-- -- </string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_DI3">
+   <property name="geometry">
+    <rect>
+     <x>560</x>
+     <y>112</y>
+     <width>210</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>0.0</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_DI">
+   <property name="geometry">
+    <rect>
+     <x>33</x>
+     <y>112</y>
+     <width>130</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>DI</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_CCU2">
+   <property name="geometry">
+    <rect>
+     <x>560</x>
+     <y>26</y>
+     <width>389</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 15px, &quot;SimHei&quot;;	</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_PIS2">
+   <property name="geometry">
+    <rect>
+     <x>351</x>
+     <y>458</y>
+     <width>210</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>-- -- </string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_CCU1">
+   <property name="geometry">
+    <rect>
+     <x>162</x>
+     <y>26</y>
+     <width>399</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 15px, &quot;SimHei&quot;;	</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_HVAC1">
+   <property name="geometry">
+    <rect>
+     <x>162</x>
+     <y>309</y>
+     <width>190</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>0.0</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_FAU3">
+   <property name="geometry">
+    <rect>
+     <x>560</x>
+     <y>488</y>
+     <width>210</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>-- -- </string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_FAU">
+   <property name="geometry">
+    <rect>
+     <x>33</x>
+     <y>488</y>
+     <width>130</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>FAU</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_car2Door1_1">
+   <property name="geometry">
+    <rect>
+     <x>351</x>
+     <y>339</y>
+     <width>105</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_SIV1">
+   <property name="geometry">
+    <rect>
+     <x>162</x>
+     <y>200</y>
+     <width>190</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_DO4">
+   <property name="geometry">
+    <rect>
+     <x>769</x>
+     <y>141</y>
+     <width>180</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>0.0</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_Door2">
+   <property name="geometry">
+    <rect>
+     <x>33</x>
+     <y>398</y>
+     <width>130</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>DOOR2</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_GW2">
+   <property name="geometry">
+    <rect>
+     <x>351</x>
+     <y>83</y>
+     <width>210</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>0.0</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_DCU">
+   <property name="geometry">
+    <rect>
+     <x>33</x>
+     <y>270</y>
+     <width>130</width>
+     <height>39</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>DCU</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_SIV3">
+   <property name="geometry">
+    <rect>
+     <x>560</x>
+     <y>200</y>
+     <width>210</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>-- -- </string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_HVAC2">
+   <property name="geometry">
+    <rect>
+     <x>351</x>
+     <y>309</y>
+     <width>210</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>0.0</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_back">
+   <property name="geometry">
+    <rect>
+     <x>910</x>
+     <y>660</y>
+     <width>98</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>返回</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_GW">
+   <property name="geometry">
+    <rect>
+     <x>33</x>
+     <y>83</y>
+     <width>130</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>IO－GW</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_GW4">
+   <property name="geometry">
+    <rect>
+     <x>769</x>
+     <y>83</y>
+     <width>180</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>0.0</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_HVAC4">
+   <property name="geometry">
+    <rect>
+     <x>769</x>
+     <y>309</y>
+     <width>180</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>0.0</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_CCU">
+   <property name="geometry">
+    <rect>
+     <x>33</x>
+     <y>26</y>
+     <width>130</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>CCU</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_FAU1">
+   <property name="geometry">
+    <rect>
+     <x>162</x>
+     <y>488</y>
+     <width>190</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>0.0</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_PIS1">
+   <property name="geometry">
+    <rect>
+     <x>162</x>
+     <y>458</y>
+     <width>190</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>0.0.0</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_ERM1">
+   <property name="geometry">
+    <rect>
+     <x>162</x>
+     <y>55</y>
+     <width>399</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">	font: 17px, &quot;SimHei&quot;;	</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_ERM">
+   <property name="geometry">
+    <rect>
+     <x>33</x>
+     <y>55</y>
+     <width>130</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>ERM</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_ERM2">
+   <property name="geometry">
+    <rect>
+     <x>560</x>
+     <y>55</y>
+     <width>389</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 17px, &quot;SimHei&quot;;	</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_car1Door1_2">
+   <property name="geometry">
+    <rect>
+     <x>257</x>
+     <y>339</y>
+     <width>95</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_car1Door1_3">
+   <property name="geometry">
+    <rect>
+     <x>162</x>
+     <y>369</y>
+     <width>95</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_car1Door1_4">
+   <property name="geometry">
+    <rect>
+     <x>257</x>
+     <y>369</y>
+     <width>95</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_car2Door1_2">
+   <property name="geometry">
+    <rect>
+     <x>456</x>
+     <y>339</y>
+     <width>104</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_car2Door1_3">
+   <property name="geometry">
+    <rect>
+     <x>351</x>
+     <y>369</y>
+     <width>105</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_car2Door1_4">
+   <property name="geometry">
+    <rect>
+     <x>456</x>
+     <y>369</y>
+     <width>104</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_car3Door1_2">
+   <property name="geometry">
+    <rect>
+     <x>665</x>
+     <y>339</y>
+     <width>104</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_car3Door1_3">
+   <property name="geometry">
+    <rect>
+     <x>560</x>
+     <y>369</y>
+     <width>105</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_car3Door1_4">
+   <property name="geometry">
+    <rect>
+     <x>665</x>
+     <y>369</y>
+     <width>104</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_car4Door1_2">
+   <property name="geometry">
+    <rect>
+     <x>858</x>
+     <y>339</y>
+     <width>91</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_car4Door1_3">
+   <property name="geometry">
+    <rect>
+     <x>769</x>
+     <y>369</y>
+     <width>90</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_car4Door1_4">
+   <property name="geometry">
+    <rect>
+     <x>858</x>
+     <y>369</y>
+     <width>91</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_car4Door2_4">
+   <property name="geometry">
+    <rect>
+     <x>858</x>
+     <y>428</y>
+     <width>91</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_car2Door2_1">
+   <property name="geometry">
+    <rect>
+     <x>351</x>
+     <y>398</y>
+     <width>105</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_car3Door2_2">
+   <property name="geometry">
+    <rect>
+     <x>665</x>
+     <y>398</y>
+     <width>104</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_car1Door2_2">
+   <property name="geometry">
+    <rect>
+     <x>257</x>
+     <y>398</y>
+     <width>95</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_car3Door2_3">
+   <property name="geometry">
+    <rect>
+     <x>560</x>
+     <y>428</y>
+     <width>105</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_car4Door2_3">
+   <property name="geometry">
+    <rect>
+     <x>769</x>
+     <y>428</y>
+     <width>90</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_car4Door2_1">
+   <property name="geometry">
+    <rect>
+     <x>769</x>
+     <y>398</y>
+     <width>90</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_car2Door2_2">
+   <property name="geometry">
+    <rect>
+     <x>456</x>
+     <y>398</y>
+     <width>104</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_car4Door2_2">
+   <property name="geometry">
+    <rect>
+     <x>858</x>
+     <y>398</y>
+     <width>91</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_car1Door2_3">
+   <property name="geometry">
+    <rect>
+     <x>162</x>
+     <y>428</y>
+     <width>95</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_car1Door2_4">
+   <property name="geometry">
+    <rect>
+     <x>257</x>
+     <y>428</y>
+     <width>95</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_car2Door2_4">
+   <property name="geometry">
+    <rect>
+     <x>456</x>
+     <y>428</y>
+     <width>104</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_car2Door2_3">
+   <property name="geometry">
+    <rect>
+     <x>351</x>
+     <y>428</y>
+     <width>105</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_car3Door2_4">
+   <property name="geometry">
+    <rect>
+     <x>665</x>
+     <y>428</y>
+     <width>104</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_car1Door2_1">
+   <property name="geometry">
+    <rect>
+     <x>162</x>
+     <y>398</y>
+     <width>95</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_car3Door2_1">
+   <property name="geometry">
+    <rect>
+     <x>560</x>
+     <y>398</y>
+     <width>105</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_BCG1">
+   <property name="geometry">
+    <rect>
+     <x>162</x>
+     <y>547</y>
+     <width>190</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>0.0.0</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_PDS2">
+   <property name="geometry">
+    <rect>
+     <x>351</x>
+     <y>576</y>
+     <width>210</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>-- -- </string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_BMS4">
+   <property name="geometry">
+    <rect>
+     <x>769</x>
+     <y>605</y>
+     <width>180</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_PDS4">
+   <property name="geometry">
+    <rect>
+     <x>769</x>
+     <y>576</y>
+     <width>180</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>0.0</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_BCG4">
+   <property name="geometry">
+    <rect>
+     <x>769</x>
+     <y>547</y>
+     <width>180</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>0.0.0</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_BCG3">
+   <property name="geometry">
+    <rect>
+     <x>560</x>
+     <y>547</y>
+     <width>210</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>-- -- </string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_PDS">
+   <property name="geometry">
+    <rect>
+     <x>33</x>
+     <y>576</y>
+     <width>130</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>PDS</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_BMS">
+   <property name="geometry">
+    <rect>
+     <x>33</x>
+     <y>605</y>
+     <width>130</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>BMS</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_BMS3">
+   <property name="geometry">
+    <rect>
+     <x>560</x>
+     <y>605</y>
+     <width>210</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>-- -- </string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_BMS1">
+   <property name="geometry">
+    <rect>
+     <x>162</x>
+     <y>605</y>
+     <width>190</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_BCG2">
+   <property name="geometry">
+    <rect>
+     <x>351</x>
+     <y>547</y>
+     <width>210</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>-- -- </string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_BCG">
+   <property name="geometry">
+    <rect>
+     <x>33</x>
+     <y>547</y>
+     <width>130</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>BCG</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_PDS1">
+   <property name="geometry">
+    <rect>
+     <x>162</x>
+     <y>576</y>
+     <width>190</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>0.0</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_BMS2">
+   <property name="geometry">
+    <rect>
+     <x>351</x>
+     <y>605</y>
+     <width>210</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>-- -- </string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_PDS3">
+   <property name="geometry">
+    <rect>
+     <x>560</x>
+     <y>576</y>
+     <width>210</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>-- -- </string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_car2DCU2">
+   <property name="geometry">
+    <rect>
+     <x>403</x>
+     <y>290</y>
+     <width>53</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">	font: 12px, &quot;SimHei&quot;;	</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_car2DCU4">
+   <property name="geometry">
+    <rect>
+     <x>509</x>
+     <y>290</y>
+     <width>52</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">	font: 12px, &quot;SimHei&quot;;	</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_car1DCU">
+   <property name="geometry">
+    <rect>
+     <x>162</x>
+     <y>270</y>
+     <width>190</width>
+     <height>39</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>-- -- </string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_car4DCU">
+   <property name="geometry">
+    <rect>
+     <x>769</x>
+     <y>270</y>
+     <width>180</width>
+     <height>39</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>-- -- </string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_car3DCU4">
+   <property name="geometry">
+    <rect>
+     <x>717</x>
+     <y>290</y>
+     <width>52</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 12px, &quot;SimHei&quot;;	</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_car2DCU1">
+   <property name="geometry">
+    <rect>
+     <x>351</x>
+     <y>290</y>
+     <width>52</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">	font: 12px, &quot;SimHei&quot;;	</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_car3DCU1">
+   <property name="geometry">
+    <rect>
+     <x>560</x>
+     <y>290</y>
+     <width>52</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">	font: 12px, &quot;SimHei&quot;;	</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_car3DCU3">
+   <property name="geometry">
+    <rect>
+     <x>665</x>
+     <y>290</y>
+     <width>52</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">	font: 12px, &quot;SimHei&quot;;	</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_car2DCU3">
+   <property name="geometry">
+    <rect>
+     <x>456</x>
+     <y>290</y>
+     <width>53</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">	font: 12px, &quot;SimHei&quot;;	</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_car3DCU2">
+   <property name="geometry">
+    <rect>
+     <x>612</x>
+     <y>290</y>
+     <width>53</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">	font: 12px, &quot;SimHei&quot;;	</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_car2DCUGW">
+   <property name="geometry">
+    <rect>
+     <x>351</x>
+     <y>270</y>
+     <width>210</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">	font: 15px, &quot;SimHei&quot;;	</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_car3DCUGW">
+   <property name="geometry">
+    <rect>
+     <x>560</x>
+     <y>270</y>
+     <width>210</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">	font: 15px, &quot;SimHei&quot;;	</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_SIVGW4">
+   <property name="geometry">
+    <rect>
+     <x>769</x>
+     <y>220</y>
+     <width>180</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_SIVGW1">
+   <property name="geometry">
+    <rect>
+     <x>162</x>
+     <y>220</y>
+     <width>190</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

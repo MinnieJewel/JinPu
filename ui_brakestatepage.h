@@ -1,0 +1,678 @@
+/********************************************************************************
+** Form generated from reading UI file 'brakestatepage.ui'
+**
+** Created: Tue Jan 16 09:46:47 2018
+**      by: Qt User Interface Compiler version 4.6.3
+**
+** WARNING! All changes made in this file will be lost when recompiling UI file!
+********************************************************************************/
+
+#ifndef UI_BRAKESTATEPAGE_H
+#define UI_BRAKESTATEPAGE_H
+
+#include <QtCore/QVariant>
+#include <QtGui/QAction>
+#include <QtGui/QApplication>
+#include <QtGui/QButtonGroup>
+#include <QtGui/QHeaderView>
+#include <QtGui/QLabel>
+#include <QtGui/QPushButton>
+#include <QtGui/QWidget>
+
+QT_BEGIN_NAMESPACE
+
+class Ui_BrakeStatePage
+{
+public:
+    QLabel *label_car4No;
+    QLabel *label_car4Load2;
+    QLabel *label_TotalWindPress1;
+    QLabel *label_car1No;
+    QLabel *label_car4AirReedPress1_1;
+    QLabel *label_airReedPress;
+    QLabel *label_car3No;
+    QLabel *label_car1ElecBrakeCutOff;
+    QLabel *label_car1AirReedPress2_1;
+    QLabel *label_car1Load1;
+    QLabel *label_car4AirReedPress2_1;
+    QLabel *label_Load;
+    QLabel *label_car4ElecBrakeCutOff;
+    QLabel *label_car2ElecBrakeCutOff;
+    QLabel *label_ElecBrakeCutOff;
+    QLabel *label_car2AirReedPress1_1;
+    QLabel *label_car2Load1;
+    QLabel *label_car3Load2;
+    QLabel *label_car3ElecBrakeCutOff;
+    QLabel *label_TotalWindPress;
+    QLabel *label_car2No;
+    QLabel *label_car3AirReedPress2_1;
+    QLabel *label_vehicleNo;
+    QLabel *label_car1AirReedPress1_1;
+    QLabel *label_car2AirReedPress2_1;
+    QLabel *label_car3AirReedPress1_1;
+    QLabel *label_TotalWindPress2;
+    QLabel *label_car4AirReedPress1_2;
+    QLabel *label_car2AirReedPress2_2;
+    QLabel *label_car1AirReedPress2_2;
+    QLabel *label_car3AirReedPress2_2;
+    QLabel *label_car4AirReedPress2_2;
+    QLabel *label_car2AirReedPress1_2;
+    QLabel *label_car3AirReedPress1_2;
+    QLabel *label_car1AirReedPress1_2;
+    QLabel *label_airReedPress_2;
+    QLabel *label_airReedPress_3;
+    QLabel *label_car1Load2;
+    QLabel *label_car2Load2;
+    QLabel *label_car3Load1;
+    QLabel *label_car4Load1;
+    QLabel *label_cylPressure;
+    QLabel *label_car4EmergencyBrake2;
+    QLabel *label_car2EmergencyBrake1;
+    QLabel *label_car1EmergencyBrake1;
+    QLabel *label_emergencyBrake;
+    QLabel *label_car3EmergencyBrake2;
+    QLabel *label_cylPressure1;
+    QLabel *label_cylPressure2;
+    QLabel *label_cylPressureMp2_12;
+    QLabel *label_cylPressureTc1_11;
+    QLabel *label_cylPressureMp2_21;
+    QLabel *label_cylPressureMp1_22;
+    QLabel *label_cylPressureTc2_12;
+    QLabel *label_cylPressureMp1_11;
+    QLabel *label_cylPressureMp1_12;
+    QLabel *label_cylPressureTc1_22;
+    QLabel *label_cylPressureTc1_12;
+    QLabel *label_cylPressureMp1_21;
+    QLabel *label_cylPressureTc1_21;
+    QLabel *label_cylPressureTc2_21;
+    QLabel *label_cylPressureMp2_22;
+    QLabel *label_cylPressureMp2_11;
+    QLabel *label_cylPressureTc2_22;
+    QLabel *label_cylPressureTc2_11;
+    QPushButton *btn_EmergencyBroadcast;
+    QLabel *label_car2EmergencyBrake2;
+    QLabel *label_car3EmergencyBrake1;
+    QLabel *label_car1EmergencyBrake2;
+    QLabel *label_car4EmergencyBrake1;
+    QLabel *label_cylPressureMp2_13;
+    QLabel *label_cylPressureTc2_13;
+    QLabel *label_cylPressureTc1_13;
+    QLabel *label_cylPressureMp2_14;
+    QLabel *label_cylPressureTc1_14;
+    QLabel *label_cylPressureMp1_13;
+    QLabel *label_cylPressureMp1_14;
+    QLabel *label_cylPressureTc2_14;
+    QLabel *label_cylPressure1_2;
+    QLabel *label_airBrake11;
+    QLabel *label_airBrake;
+    QLabel *label_airBrake21;
+    QLabel *label_airBrake32;
+    QLabel *label_airBrake31;
+    QLabel *label_airBrake42;
+    QLabel *label_airBrake12;
+    QLabel *label_airBrake22;
+    QLabel *label_airBrake41;
+    QLabel *keepBrake11;
+    QLabel *keepBrake;
+    QLabel *keepBrake21;
+    QLabel *keepBrake32;
+    QLabel *keepBrake31;
+    QLabel *keepBrake42;
+    QLabel *keepBrake12;
+    QLabel *keepBrake22;
+    QLabel *keepBrake41;
+    QLabel *stayBrake1;
+    QLabel *stayBrake;
+    QLabel *stayBrake2;
+    QLabel *stayBrake3;
+    QLabel *stayBrake4;
+
+    void setupUi(QWidget *BrakeStatePage)
+    {
+        if (BrakeStatePage->objectName().isEmpty())
+            BrakeStatePage->setObjectName(QString::fromUtf8("BrakeStatePage"));
+        BrakeStatePage->resize(1024, 618);
+        BrakeStatePage->setStyleSheet(QString::fromUtf8("QLabel\n"
+"{\n"
+"	color: white;\n"
+"	border: 2px groove, gray;\n"
+"    border-color: gray;\n"
+"	font: 17px, \"SimHei\";	\n"
+"}\n"
+"\n"
+"QWidget\n"
+"{\n"
+"	background-color: black;\n"
+"}\n"
+"\n"
+"QPushButton\n"
+"{\n"
+"	font: 20px, \"SimHei\";\n"
+"    color: black;\n"
+"	background-color: rgb(250, 250, 250);\n"
+"	border-radius: 5px;\n"
+"}"));
+        label_car4No = new QLabel(BrakeStatePage);
+        label_car4No->setObjectName(QString::fromUtf8("label_car4No"));
+        label_car4No->setGeometry(QRect(761, 100, 180, 35));
+        label_car4No->setAlignment(Qt::AlignCenter);
+        label_car4Load2 = new QLabel(BrakeStatePage);
+        label_car4Load2->setObjectName(QString::fromUtf8("label_car4Load2"));
+        label_car4Load2->setGeometry(QRect(761, 252, 90, 35));
+        label_car4Load2->setAlignment(Qt::AlignCenter);
+        label_TotalWindPress1 = new QLabel(BrakeStatePage);
+        label_TotalWindPress1->setObjectName(QString::fromUtf8("label_TotalWindPress1"));
+        label_TotalWindPress1->setGeometry(QRect(155, 287, 398, 35));
+        label_TotalWindPress1->setAlignment(Qt::AlignCenter);
+        label_car1No = new QLabel(BrakeStatePage);
+        label_car1No->setObjectName(QString::fromUtf8("label_car1No"));
+        label_car1No->setGeometry(QRect(155, 100, 190, 35));
+        label_car1No->setScaledContents(false);
+        label_car1No->setAlignment(Qt::AlignCenter);
+        label_car4AirReedPress1_1 = new QLabel(BrakeStatePage);
+        label_car4AirReedPress1_1->setObjectName(QString::fromUtf8("label_car4AirReedPress1_1"));
+        label_car4AirReedPress1_1->setGeometry(QRect(851, 321, 90, 35));
+        label_car4AirReedPress1_1->setAlignment(Qt::AlignCenter);
+        label_airReedPress = new QLabel(BrakeStatePage);
+        label_airReedPress->setObjectName(QString::fromUtf8("label_airReedPress"));
+        label_airReedPress->setGeometry(QRect(26, 321, 95, 70));
+        label_car3No = new QLabel(BrakeStatePage);
+        label_car3No->setObjectName(QString::fromUtf8("label_car3No"));
+        label_car3No->setGeometry(QRect(552, 100, 210, 35));
+        label_car3No->setAlignment(Qt::AlignCenter);
+        label_car1ElecBrakeCutOff = new QLabel(BrakeStatePage);
+        label_car1ElecBrakeCutOff->setObjectName(QString::fromUtf8("label_car1ElecBrakeCutOff"));
+        label_car1ElecBrakeCutOff->setGeometry(QRect(155, 134, 190, 35));
+        label_car1ElecBrakeCutOff->setAlignment(Qt::AlignCenter);
+        label_car1AirReedPress2_1 = new QLabel(BrakeStatePage);
+        label_car1AirReedPress2_1->setObjectName(QString::fromUtf8("label_car1AirReedPress2_1"));
+        label_car1AirReedPress2_1->setGeometry(QRect(249, 321, 95, 35));
+        label_car1AirReedPress2_1->setAlignment(Qt::AlignCenter);
+        label_car1Load1 = new QLabel(BrakeStatePage);
+        label_car1Load1->setObjectName(QString::fromUtf8("label_car1Load1"));
+        label_car1Load1->setGeometry(QRect(155, 252, 95, 35));
+        label_car1Load1->setAlignment(Qt::AlignCenter);
+        label_car4AirReedPress2_1 = new QLabel(BrakeStatePage);
+        label_car4AirReedPress2_1->setObjectName(QString::fromUtf8("label_car4AirReedPress2_1"));
+        label_car4AirReedPress2_1->setGeometry(QRect(761, 321, 91, 35));
+        label_car4AirReedPress2_1->setAlignment(Qt::AlignCenter);
+        label_Load = new QLabel(BrakeStatePage);
+        label_Load->setObjectName(QString::fromUtf8("label_Load"));
+        label_Load->setGeometry(QRect(26, 252, 130, 35));
+        label_car4ElecBrakeCutOff = new QLabel(BrakeStatePage);
+        label_car4ElecBrakeCutOff->setObjectName(QString::fromUtf8("label_car4ElecBrakeCutOff"));
+        label_car4ElecBrakeCutOff->setGeometry(QRect(761, 134, 180, 35));
+        label_car4ElecBrakeCutOff->setAlignment(Qt::AlignCenter);
+        label_car2ElecBrakeCutOff = new QLabel(BrakeStatePage);
+        label_car2ElecBrakeCutOff->setObjectName(QString::fromUtf8("label_car2ElecBrakeCutOff"));
+        label_car2ElecBrakeCutOff->setGeometry(QRect(343, 134, 210, 35));
+        label_car2ElecBrakeCutOff->setAlignment(Qt::AlignCenter);
+        label_ElecBrakeCutOff = new QLabel(BrakeStatePage);
+        label_ElecBrakeCutOff->setObjectName(QString::fromUtf8("label_ElecBrakeCutOff"));
+        label_ElecBrakeCutOff->setGeometry(QRect(26, 134, 130, 35));
+        label_car2AirReedPress1_1 = new QLabel(BrakeStatePage);
+        label_car2AirReedPress1_1->setObjectName(QString::fromUtf8("label_car2AirReedPress1_1"));
+        label_car2AirReedPress1_1->setGeometry(QRect(343, 321, 105, 35));
+        label_car2AirReedPress1_1->setAlignment(Qt::AlignCenter);
+        label_car2Load1 = new QLabel(BrakeStatePage);
+        label_car2Load1->setObjectName(QString::fromUtf8("label_car2Load1"));
+        label_car2Load1->setGeometry(QRect(343, 252, 105, 35));
+        label_car2Load1->setAlignment(Qt::AlignCenter);
+        label_car3Load2 = new QLabel(BrakeStatePage);
+        label_car3Load2->setObjectName(QString::fromUtf8("label_car3Load2"));
+        label_car3Load2->setGeometry(QRect(552, 252, 105, 35));
+        label_car3Load2->setAlignment(Qt::AlignCenter);
+        label_car3ElecBrakeCutOff = new QLabel(BrakeStatePage);
+        label_car3ElecBrakeCutOff->setObjectName(QString::fromUtf8("label_car3ElecBrakeCutOff"));
+        label_car3ElecBrakeCutOff->setGeometry(QRect(552, 134, 210, 35));
+        label_car3ElecBrakeCutOff->setAlignment(Qt::AlignCenter);
+        label_TotalWindPress = new QLabel(BrakeStatePage);
+        label_TotalWindPress->setObjectName(QString::fromUtf8("label_TotalWindPress"));
+        label_TotalWindPress->setGeometry(QRect(26, 287, 130, 35));
+        label_car2No = new QLabel(BrakeStatePage);
+        label_car2No->setObjectName(QString::fromUtf8("label_car2No"));
+        label_car2No->setGeometry(QRect(343, 100, 210, 35));
+        label_car2No->setAlignment(Qt::AlignCenter);
+        label_car3AirReedPress2_1 = new QLabel(BrakeStatePage);
+        label_car3AirReedPress2_1->setObjectName(QString::fromUtf8("label_car3AirReedPress2_1"));
+        label_car3AirReedPress2_1->setGeometry(QRect(552, 321, 105, 35));
+        label_car3AirReedPress2_1->setAlignment(Qt::AlignCenter);
+        label_vehicleNo = new QLabel(BrakeStatePage);
+        label_vehicleNo->setObjectName(QString::fromUtf8("label_vehicleNo"));
+        label_vehicleNo->setGeometry(QRect(26, 100, 130, 35));
+        label_car1AirReedPress1_1 = new QLabel(BrakeStatePage);
+        label_car1AirReedPress1_1->setObjectName(QString::fromUtf8("label_car1AirReedPress1_1"));
+        label_car1AirReedPress1_1->setGeometry(QRect(155, 321, 95, 35));
+        label_car1AirReedPress1_1->setAlignment(Qt::AlignCenter);
+        label_car2AirReedPress2_1 = new QLabel(BrakeStatePage);
+        label_car2AirReedPress2_1->setObjectName(QString::fromUtf8("label_car2AirReedPress2_1"));
+        label_car2AirReedPress2_1->setGeometry(QRect(447, 321, 106, 35));
+        label_car2AirReedPress2_1->setAlignment(Qt::AlignCenter);
+        label_car3AirReedPress1_1 = new QLabel(BrakeStatePage);
+        label_car3AirReedPress1_1->setObjectName(QString::fromUtf8("label_car3AirReedPress1_1"));
+        label_car3AirReedPress1_1->setGeometry(QRect(656, 321, 106, 35));
+        label_car3AirReedPress1_1->setAlignment(Qt::AlignCenter);
+        label_TotalWindPress2 = new QLabel(BrakeStatePage);
+        label_TotalWindPress2->setObjectName(QString::fromUtf8("label_TotalWindPress2"));
+        label_TotalWindPress2->setGeometry(QRect(552, 287, 389, 35));
+        label_TotalWindPress2->setAlignment(Qt::AlignCenter);
+        label_car4AirReedPress1_2 = new QLabel(BrakeStatePage);
+        label_car4AirReedPress1_2->setObjectName(QString::fromUtf8("label_car4AirReedPress1_2"));
+        label_car4AirReedPress1_2->setGeometry(QRect(851, 356, 90, 35));
+        label_car4AirReedPress1_2->setAlignment(Qt::AlignCenter);
+        label_car2AirReedPress2_2 = new QLabel(BrakeStatePage);
+        label_car2AirReedPress2_2->setObjectName(QString::fromUtf8("label_car2AirReedPress2_2"));
+        label_car2AirReedPress2_2->setGeometry(QRect(447, 356, 106, 35));
+        label_car2AirReedPress2_2->setAlignment(Qt::AlignCenter);
+        label_car1AirReedPress2_2 = new QLabel(BrakeStatePage);
+        label_car1AirReedPress2_2->setObjectName(QString::fromUtf8("label_car1AirReedPress2_2"));
+        label_car1AirReedPress2_2->setGeometry(QRect(249, 356, 95, 35));
+        label_car1AirReedPress2_2->setAlignment(Qt::AlignCenter);
+        label_car3AirReedPress2_2 = new QLabel(BrakeStatePage);
+        label_car3AirReedPress2_2->setObjectName(QString::fromUtf8("label_car3AirReedPress2_2"));
+        label_car3AirReedPress2_2->setGeometry(QRect(552, 356, 105, 35));
+        label_car3AirReedPress2_2->setAlignment(Qt::AlignCenter);
+        label_car4AirReedPress2_2 = new QLabel(BrakeStatePage);
+        label_car4AirReedPress2_2->setObjectName(QString::fromUtf8("label_car4AirReedPress2_2"));
+        label_car4AirReedPress2_2->setGeometry(QRect(761, 356, 91, 35));
+        label_car4AirReedPress2_2->setAlignment(Qt::AlignCenter);
+        label_car2AirReedPress1_2 = new QLabel(BrakeStatePage);
+        label_car2AirReedPress1_2->setObjectName(QString::fromUtf8("label_car2AirReedPress1_2"));
+        label_car2AirReedPress1_2->setGeometry(QRect(343, 356, 105, 35));
+        label_car2AirReedPress1_2->setAlignment(Qt::AlignCenter);
+        label_car3AirReedPress1_2 = new QLabel(BrakeStatePage);
+        label_car3AirReedPress1_2->setObjectName(QString::fromUtf8("label_car3AirReedPress1_2"));
+        label_car3AirReedPress1_2->setGeometry(QRect(656, 356, 106, 35));
+        label_car3AirReedPress1_2->setAlignment(Qt::AlignCenter);
+        label_car1AirReedPress1_2 = new QLabel(BrakeStatePage);
+        label_car1AirReedPress1_2->setObjectName(QString::fromUtf8("label_car1AirReedPress1_2"));
+        label_car1AirReedPress1_2->setGeometry(QRect(155, 356, 95, 35));
+        label_car1AirReedPress1_2->setAlignment(Qt::AlignCenter);
+        label_airReedPress_2 = new QLabel(BrakeStatePage);
+        label_airReedPress_2->setObjectName(QString::fromUtf8("label_airReedPress_2"));
+        label_airReedPress_2->setGeometry(QRect(120, 321, 35, 35));
+        label_airReedPress_2->setStyleSheet(QString::fromUtf8("font: 12px, \"SimHei\";	"));
+        label_airReedPress_3 = new QLabel(BrakeStatePage);
+        label_airReedPress_3->setObjectName(QString::fromUtf8("label_airReedPress_3"));
+        label_airReedPress_3->setGeometry(QRect(120, 356, 35, 35));
+        label_airReedPress_3->setStyleSheet(QString::fromUtf8("font: 12px, \"SimHei\";	"));
+        label_car1Load2 = new QLabel(BrakeStatePage);
+        label_car1Load2->setObjectName(QString::fromUtf8("label_car1Load2"));
+        label_car1Load2->setGeometry(QRect(250, 252, 95, 35));
+        label_car1Load2->setAlignment(Qt::AlignCenter);
+        label_car2Load2 = new QLabel(BrakeStatePage);
+        label_car2Load2->setObjectName(QString::fromUtf8("label_car2Load2"));
+        label_car2Load2->setGeometry(QRect(448, 252, 105, 35));
+        label_car2Load2->setAlignment(Qt::AlignCenter);
+        label_car3Load1 = new QLabel(BrakeStatePage);
+        label_car3Load1->setObjectName(QString::fromUtf8("label_car3Load1"));
+        label_car3Load1->setGeometry(QRect(656, 252, 106, 35));
+        label_car3Load1->setAlignment(Qt::AlignCenter);
+        label_car4Load1 = new QLabel(BrakeStatePage);
+        label_car4Load1->setObjectName(QString::fromUtf8("label_car4Load1"));
+        label_car4Load1->setGeometry(QRect(851, 252, 90, 35));
+        label_car4Load1->setAlignment(Qt::AlignCenter);
+        label_cylPressure = new QLabel(BrakeStatePage);
+        label_cylPressure->setObjectName(QString::fromUtf8("label_cylPressure"));
+        label_cylPressure->setGeometry(QRect(26, 193, 95, 60));
+        label_car4EmergencyBrake2 = new QLabel(BrakeStatePage);
+        label_car4EmergencyBrake2->setObjectName(QString::fromUtf8("label_car4EmergencyBrake2"));
+        label_car4EmergencyBrake2->setGeometry(QRect(761, 390, 91, 35));
+        label_car4EmergencyBrake2->setAlignment(Qt::AlignCenter);
+        label_car2EmergencyBrake1 = new QLabel(BrakeStatePage);
+        label_car2EmergencyBrake1->setObjectName(QString::fromUtf8("label_car2EmergencyBrake1"));
+        label_car2EmergencyBrake1->setGeometry(QRect(343, 390, 105, 35));
+        label_car2EmergencyBrake1->setAlignment(Qt::AlignCenter);
+        label_car1EmergencyBrake1 = new QLabel(BrakeStatePage);
+        label_car1EmergencyBrake1->setObjectName(QString::fromUtf8("label_car1EmergencyBrake1"));
+        label_car1EmergencyBrake1->setGeometry(QRect(155, 390, 95, 35));
+        label_car1EmergencyBrake1->setAlignment(Qt::AlignCenter);
+        label_emergencyBrake = new QLabel(BrakeStatePage);
+        label_emergencyBrake->setObjectName(QString::fromUtf8("label_emergencyBrake"));
+        label_emergencyBrake->setGeometry(QRect(26, 390, 130, 35));
+        label_car3EmergencyBrake2 = new QLabel(BrakeStatePage);
+        label_car3EmergencyBrake2->setObjectName(QString::fromUtf8("label_car3EmergencyBrake2"));
+        label_car3EmergencyBrake2->setGeometry(QRect(552, 390, 105, 35));
+        label_car3EmergencyBrake2->setAlignment(Qt::AlignCenter);
+        label_cylPressure1 = new QLabel(BrakeStatePage);
+        label_cylPressure1->setObjectName(QString::fromUtf8("label_cylPressure1"));
+        label_cylPressure1->setGeometry(QRect(120, 193, 35, 30));
+        label_cylPressure1->setStyleSheet(QString::fromUtf8("font: 12px, \"SimHei\";	"));
+        label_cylPressure2 = new QLabel(BrakeStatePage);
+        label_cylPressure2->setObjectName(QString::fromUtf8("label_cylPressure2"));
+        label_cylPressure2->setGeometry(QRect(120, 223, 35, 30));
+        label_cylPressure2->setStyleSheet(QString::fromUtf8("font: 12px, \"SimHei\";	"));
+        label_cylPressureMp2_12 = new QLabel(BrakeStatePage);
+        label_cylPressureMp2_12->setObjectName(QString::fromUtf8("label_cylPressureMp2_12"));
+        label_cylPressureMp2_12->setGeometry(QRect(656, 223, 106, 30));
+        label_cylPressureMp2_12->setAlignment(Qt::AlignCenter);
+        label_cylPressureTc1_11 = new QLabel(BrakeStatePage);
+        label_cylPressureTc1_11->setObjectName(QString::fromUtf8("label_cylPressureTc1_11"));
+        label_cylPressureTc1_11->setGeometry(QRect(155, 193, 95, 30));
+        label_cylPressureTc1_11->setAlignment(Qt::AlignCenter);
+        label_cylPressureMp2_21 = new QLabel(BrakeStatePage);
+        label_cylPressureMp2_21->setObjectName(QString::fromUtf8("label_cylPressureMp2_21"));
+        label_cylPressureMp2_21->setGeometry(QRect(552, 193, 105, 30));
+        label_cylPressureMp2_21->setAlignment(Qt::AlignCenter);
+        label_cylPressureMp1_22 = new QLabel(BrakeStatePage);
+        label_cylPressureMp1_22->setObjectName(QString::fromUtf8("label_cylPressureMp1_22"));
+        label_cylPressureMp1_22->setGeometry(QRect(448, 223, 105, 30));
+        label_cylPressureMp1_22->setAlignment(Qt::AlignCenter);
+        label_cylPressureTc2_12 = new QLabel(BrakeStatePage);
+        label_cylPressureTc2_12->setObjectName(QString::fromUtf8("label_cylPressureTc2_12"));
+        label_cylPressureTc2_12->setGeometry(QRect(851, 223, 90, 30));
+        label_cylPressureTc2_12->setAlignment(Qt::AlignCenter);
+        label_cylPressureMp1_11 = new QLabel(BrakeStatePage);
+        label_cylPressureMp1_11->setObjectName(QString::fromUtf8("label_cylPressureMp1_11"));
+        label_cylPressureMp1_11->setGeometry(QRect(343, 193, 105, 30));
+        label_cylPressureMp1_11->setAlignment(Qt::AlignCenter);
+        label_cylPressureMp1_12 = new QLabel(BrakeStatePage);
+        label_cylPressureMp1_12->setObjectName(QString::fromUtf8("label_cylPressureMp1_12"));
+        label_cylPressureMp1_12->setGeometry(QRect(343, 223, 105, 30));
+        label_cylPressureMp1_12->setAlignment(Qt::AlignCenter);
+        label_cylPressureTc1_22 = new QLabel(BrakeStatePage);
+        label_cylPressureTc1_22->setObjectName(QString::fromUtf8("label_cylPressureTc1_22"));
+        label_cylPressureTc1_22->setGeometry(QRect(250, 223, 95, 30));
+        label_cylPressureTc1_22->setAlignment(Qt::AlignCenter);
+        label_cylPressureTc1_12 = new QLabel(BrakeStatePage);
+        label_cylPressureTc1_12->setObjectName(QString::fromUtf8("label_cylPressureTc1_12"));
+        label_cylPressureTc1_12->setGeometry(QRect(155, 223, 95, 30));
+        label_cylPressureTc1_12->setAlignment(Qt::AlignCenter);
+        label_cylPressureMp1_21 = new QLabel(BrakeStatePage);
+        label_cylPressureMp1_21->setObjectName(QString::fromUtf8("label_cylPressureMp1_21"));
+        label_cylPressureMp1_21->setGeometry(QRect(448, 193, 105, 30));
+        label_cylPressureMp1_21->setAlignment(Qt::AlignCenter);
+        label_cylPressureTc1_21 = new QLabel(BrakeStatePage);
+        label_cylPressureTc1_21->setObjectName(QString::fromUtf8("label_cylPressureTc1_21"));
+        label_cylPressureTc1_21->setGeometry(QRect(250, 193, 95, 30));
+        label_cylPressureTc1_21->setAlignment(Qt::AlignCenter);
+        label_cylPressureTc2_21 = new QLabel(BrakeStatePage);
+        label_cylPressureTc2_21->setObjectName(QString::fromUtf8("label_cylPressureTc2_21"));
+        label_cylPressureTc2_21->setGeometry(QRect(761, 193, 90, 30));
+        label_cylPressureTc2_21->setAlignment(Qt::AlignCenter);
+        label_cylPressureMp2_22 = new QLabel(BrakeStatePage);
+        label_cylPressureMp2_22->setObjectName(QString::fromUtf8("label_cylPressureMp2_22"));
+        label_cylPressureMp2_22->setGeometry(QRect(552, 223, 105, 30));
+        label_cylPressureMp2_22->setAlignment(Qt::AlignCenter);
+        label_cylPressureMp2_11 = new QLabel(BrakeStatePage);
+        label_cylPressureMp2_11->setObjectName(QString::fromUtf8("label_cylPressureMp2_11"));
+        label_cylPressureMp2_11->setGeometry(QRect(656, 193, 106, 30));
+        label_cylPressureMp2_11->setAlignment(Qt::AlignCenter);
+        label_cylPressureTc2_22 = new QLabel(BrakeStatePage);
+        label_cylPressureTc2_22->setObjectName(QString::fromUtf8("label_cylPressureTc2_22"));
+        label_cylPressureTc2_22->setGeometry(QRect(761, 223, 90, 30));
+        label_cylPressureTc2_22->setAlignment(Qt::AlignCenter);
+        label_cylPressureTc2_11 = new QLabel(BrakeStatePage);
+        label_cylPressureTc2_11->setObjectName(QString::fromUtf8("label_cylPressureTc2_11"));
+        label_cylPressureTc2_11->setGeometry(QRect(851, 193, 90, 30));
+        label_cylPressureTc2_11->setStyleSheet(QString::fromUtf8(""));
+        label_cylPressureTc2_11->setAlignment(Qt::AlignCenter);
+        btn_EmergencyBroadcast = new QPushButton(BrakeStatePage);
+        btn_EmergencyBroadcast->setObjectName(QString::fromUtf8("btn_EmergencyBroadcast"));
+        btn_EmergencyBroadcast->setGeometry(QRect(860, 560, 130, 40));
+        label_car2EmergencyBrake2 = new QLabel(BrakeStatePage);
+        label_car2EmergencyBrake2->setObjectName(QString::fromUtf8("label_car2EmergencyBrake2"));
+        label_car2EmergencyBrake2->setGeometry(QRect(447, 390, 106, 35));
+        label_car2EmergencyBrake2->setAlignment(Qt::AlignCenter);
+        label_car3EmergencyBrake1 = new QLabel(BrakeStatePage);
+        label_car3EmergencyBrake1->setObjectName(QString::fromUtf8("label_car3EmergencyBrake1"));
+        label_car3EmergencyBrake1->setGeometry(QRect(656, 390, 105, 35));
+        label_car3EmergencyBrake1->setAlignment(Qt::AlignCenter);
+        label_car1EmergencyBrake2 = new QLabel(BrakeStatePage);
+        label_car1EmergencyBrake2->setObjectName(QString::fromUtf8("label_car1EmergencyBrake2"));
+        label_car1EmergencyBrake2->setGeometry(QRect(249, 390, 95, 35));
+        label_car1EmergencyBrake2->setAlignment(Qt::AlignCenter);
+        label_car4EmergencyBrake1 = new QLabel(BrakeStatePage);
+        label_car4EmergencyBrake1->setObjectName(QString::fromUtf8("label_car4EmergencyBrake1"));
+        label_car4EmergencyBrake1->setGeometry(QRect(851, 390, 90, 35));
+        label_car4EmergencyBrake1->setAlignment(Qt::AlignCenter);
+        label_cylPressureMp2_13 = new QLabel(BrakeStatePage);
+        label_cylPressureMp2_13->setObjectName(QString::fromUtf8("label_cylPressureMp2_13"));
+        label_cylPressureMp2_13->setGeometry(QRect(552, 168, 105, 25));
+        label_cylPressureMp2_13->setAlignment(Qt::AlignCenter);
+        label_cylPressureTc2_13 = new QLabel(BrakeStatePage);
+        label_cylPressureTc2_13->setObjectName(QString::fromUtf8("label_cylPressureTc2_13"));
+        label_cylPressureTc2_13->setGeometry(QRect(851, 168, 90, 25));
+        label_cylPressureTc2_13->setStyleSheet(QString::fromUtf8(""));
+        label_cylPressureTc2_13->setAlignment(Qt::AlignCenter);
+        label_cylPressureTc1_13 = new QLabel(BrakeStatePage);
+        label_cylPressureTc1_13->setObjectName(QString::fromUtf8("label_cylPressureTc1_13"));
+        label_cylPressureTc1_13->setGeometry(QRect(250, 168, 95, 25));
+        label_cylPressureTc1_13->setAlignment(Qt::AlignCenter);
+        label_cylPressureMp2_14 = new QLabel(BrakeStatePage);
+        label_cylPressureMp2_14->setObjectName(QString::fromUtf8("label_cylPressureMp2_14"));
+        label_cylPressureMp2_14->setGeometry(QRect(656, 168, 106, 25));
+        label_cylPressureMp2_14->setAlignment(Qt::AlignCenter);
+        label_cylPressureTc1_14 = new QLabel(BrakeStatePage);
+        label_cylPressureTc1_14->setObjectName(QString::fromUtf8("label_cylPressureTc1_14"));
+        label_cylPressureTc1_14->setGeometry(QRect(155, 168, 95, 25));
+        label_cylPressureTc1_14->setAlignment(Qt::AlignCenter);
+        label_cylPressureMp1_13 = new QLabel(BrakeStatePage);
+        label_cylPressureMp1_13->setObjectName(QString::fromUtf8("label_cylPressureMp1_13"));
+        label_cylPressureMp1_13->setGeometry(QRect(448, 168, 105, 25));
+        label_cylPressureMp1_13->setAlignment(Qt::AlignCenter);
+        label_cylPressureMp1_14 = new QLabel(BrakeStatePage);
+        label_cylPressureMp1_14->setObjectName(QString::fromUtf8("label_cylPressureMp1_14"));
+        label_cylPressureMp1_14->setGeometry(QRect(343, 168, 105, 25));
+        label_cylPressureMp1_14->setAlignment(Qt::AlignCenter);
+        label_cylPressureTc2_14 = new QLabel(BrakeStatePage);
+        label_cylPressureTc2_14->setObjectName(QString::fromUtf8("label_cylPressureTc2_14"));
+        label_cylPressureTc2_14->setGeometry(QRect(761, 168, 90, 25));
+        label_cylPressureTc2_14->setAlignment(Qt::AlignCenter);
+        label_cylPressure1_2 = new QLabel(BrakeStatePage);
+        label_cylPressure1_2->setObjectName(QString::fromUtf8("label_cylPressure1_2"));
+        label_cylPressure1_2->setGeometry(QRect(26, 168, 130, 25));
+        label_cylPressure1_2->setStyleSheet(QString::fromUtf8("font: 12px, \"SimHei\";	"));
+        label_airBrake11 = new QLabel(BrakeStatePage);
+        label_airBrake11->setObjectName(QString::fromUtf8("label_airBrake11"));
+        label_airBrake11->setGeometry(QRect(155, 425, 95, 35));
+        label_airBrake11->setAlignment(Qt::AlignCenter);
+        label_airBrake = new QLabel(BrakeStatePage);
+        label_airBrake->setObjectName(QString::fromUtf8("label_airBrake"));
+        label_airBrake->setGeometry(QRect(26, 425, 130, 35));
+        label_airBrake21 = new QLabel(BrakeStatePage);
+        label_airBrake21->setObjectName(QString::fromUtf8("label_airBrake21"));
+        label_airBrake21->setGeometry(QRect(343, 425, 105, 35));
+        label_airBrake21->setAlignment(Qt::AlignCenter);
+        label_airBrake32 = new QLabel(BrakeStatePage);
+        label_airBrake32->setObjectName(QString::fromUtf8("label_airBrake32"));
+        label_airBrake32->setGeometry(QRect(552, 425, 105, 35));
+        label_airBrake32->setAlignment(Qt::AlignCenter);
+        label_airBrake31 = new QLabel(BrakeStatePage);
+        label_airBrake31->setObjectName(QString::fromUtf8("label_airBrake31"));
+        label_airBrake31->setGeometry(QRect(656, 425, 105, 35));
+        label_airBrake31->setAlignment(Qt::AlignCenter);
+        label_airBrake42 = new QLabel(BrakeStatePage);
+        label_airBrake42->setObjectName(QString::fromUtf8("label_airBrake42"));
+        label_airBrake42->setGeometry(QRect(761, 425, 91, 35));
+        label_airBrake42->setAlignment(Qt::AlignCenter);
+        label_airBrake12 = new QLabel(BrakeStatePage);
+        label_airBrake12->setObjectName(QString::fromUtf8("label_airBrake12"));
+        label_airBrake12->setGeometry(QRect(249, 425, 95, 35));
+        label_airBrake12->setAlignment(Qt::AlignCenter);
+        label_airBrake22 = new QLabel(BrakeStatePage);
+        label_airBrake22->setObjectName(QString::fromUtf8("label_airBrake22"));
+        label_airBrake22->setGeometry(QRect(447, 425, 106, 35));
+        label_airBrake22->setAlignment(Qt::AlignCenter);
+        label_airBrake41 = new QLabel(BrakeStatePage);
+        label_airBrake41->setObjectName(QString::fromUtf8("label_airBrake41"));
+        label_airBrake41->setGeometry(QRect(851, 425, 90, 35));
+        label_airBrake41->setAlignment(Qt::AlignCenter);
+        keepBrake11 = new QLabel(BrakeStatePage);
+        keepBrake11->setObjectName(QString::fromUtf8("keepBrake11"));
+        keepBrake11->setGeometry(QRect(155, 460, 95, 35));
+        keepBrake11->setAlignment(Qt::AlignCenter);
+        keepBrake = new QLabel(BrakeStatePage);
+        keepBrake->setObjectName(QString::fromUtf8("keepBrake"));
+        keepBrake->setGeometry(QRect(26, 460, 130, 35));
+        keepBrake21 = new QLabel(BrakeStatePage);
+        keepBrake21->setObjectName(QString::fromUtf8("keepBrake21"));
+        keepBrake21->setGeometry(QRect(343, 460, 105, 35));
+        keepBrake21->setAlignment(Qt::AlignCenter);
+        keepBrake32 = new QLabel(BrakeStatePage);
+        keepBrake32->setObjectName(QString::fromUtf8("keepBrake32"));
+        keepBrake32->setGeometry(QRect(552, 460, 105, 35));
+        keepBrake32->setAlignment(Qt::AlignCenter);
+        keepBrake31 = new QLabel(BrakeStatePage);
+        keepBrake31->setObjectName(QString::fromUtf8("keepBrake31"));
+        keepBrake31->setGeometry(QRect(656, 460, 105, 35));
+        keepBrake31->setAlignment(Qt::AlignCenter);
+        keepBrake42 = new QLabel(BrakeStatePage);
+        keepBrake42->setObjectName(QString::fromUtf8("keepBrake42"));
+        keepBrake42->setGeometry(QRect(761, 460, 91, 35));
+        keepBrake42->setAlignment(Qt::AlignCenter);
+        keepBrake12 = new QLabel(BrakeStatePage);
+        keepBrake12->setObjectName(QString::fromUtf8("keepBrake12"));
+        keepBrake12->setGeometry(QRect(249, 460, 95, 35));
+        keepBrake12->setAlignment(Qt::AlignCenter);
+        keepBrake22 = new QLabel(BrakeStatePage);
+        keepBrake22->setObjectName(QString::fromUtf8("keepBrake22"));
+        keepBrake22->setGeometry(QRect(447, 460, 106, 35));
+        keepBrake22->setAlignment(Qt::AlignCenter);
+        keepBrake41 = new QLabel(BrakeStatePage);
+        keepBrake41->setObjectName(QString::fromUtf8("keepBrake41"));
+        keepBrake41->setGeometry(QRect(851, 460, 90, 35));
+        keepBrake41->setAlignment(Qt::AlignCenter);
+        stayBrake1 = new QLabel(BrakeStatePage);
+        stayBrake1->setObjectName(QString::fromUtf8("stayBrake1"));
+        stayBrake1->setGeometry(QRect(155, 495, 190, 35));
+        stayBrake1->setAlignment(Qt::AlignCenter);
+        stayBrake = new QLabel(BrakeStatePage);
+        stayBrake->setObjectName(QString::fromUtf8("stayBrake"));
+        stayBrake->setGeometry(QRect(26, 495, 130, 35));
+        stayBrake2 = new QLabel(BrakeStatePage);
+        stayBrake2->setObjectName(QString::fromUtf8("stayBrake2"));
+        stayBrake2->setGeometry(QRect(343, 495, 210, 35));
+        stayBrake2->setAlignment(Qt::AlignCenter);
+        stayBrake3 = new QLabel(BrakeStatePage);
+        stayBrake3->setObjectName(QString::fromUtf8("stayBrake3"));
+        stayBrake3->setGeometry(QRect(552, 495, 210, 35));
+        stayBrake3->setAlignment(Qt::AlignCenter);
+        stayBrake4 = new QLabel(BrakeStatePage);
+        stayBrake4->setObjectName(QString::fromUtf8("stayBrake4"));
+        stayBrake4->setGeometry(QRect(761, 495, 180, 35));
+        stayBrake4->setAlignment(Qt::AlignCenter);
+
+        retranslateUi(BrakeStatePage);
+
+        QMetaObject::connectSlotsByName(BrakeStatePage);
+    } // setupUi
+
+    void retranslateUi(QWidget *BrakeStatePage)
+    {
+        BrakeStatePage->setWindowTitle(QApplication::translate("BrakeStatePage", "Form", 0, QApplication::UnicodeUTF8));
+        label_car4No->setText(QApplication::translate("BrakeStatePage", "4", 0, QApplication::UnicodeUTF8));
+        label_car4Load2->setText(QString());
+        label_TotalWindPress1->setText(QString());
+        label_car1No->setText(QApplication::translate("BrakeStatePage", "1", 0, QApplication::UnicodeUTF8));
+        label_car4AirReedPress1_1->setText(QString());
+        label_airReedPress->setText(QApplication::translate("BrakeStatePage", "\347\251\272\346\260\224\347\260\247\345\216\213\345\212\233\n"
+"  (kpa)", 0, QApplication::UnicodeUTF8));
+        label_car3No->setText(QApplication::translate("BrakeStatePage", "3", 0, QApplication::UnicodeUTF8));
+        label_car1ElecBrakeCutOff->setText(QApplication::translate("BrakeStatePage", "--", 0, QApplication::UnicodeUTF8));
+        label_car1AirReedPress2_1->setText(QString());
+        label_car1Load1->setText(QString());
+        label_car4AirReedPress2_1->setText(QString());
+        label_Load->setText(QApplication::translate("BrakeStatePage", "\350\256\241\347\256\227\350\275\275\351\207\215(kg)", 0, QApplication::UnicodeUTF8));
+        label_car4ElecBrakeCutOff->setText(QApplication::translate("BrakeStatePage", "--", 0, QApplication::UnicodeUTF8));
+        label_car2ElecBrakeCutOff->setText(QString());
+        label_ElecBrakeCutOff->setText(QApplication::translate("BrakeStatePage", "\347\224\265\345\210\266\345\212\250\345\210\207\351\231\244\350\257\267\346\261\202", 0, QApplication::UnicodeUTF8));
+        label_car2AirReedPress1_1->setText(QString());
+        label_car2Load1->setText(QString());
+        label_car3Load2->setText(QString());
+        label_car3ElecBrakeCutOff->setText(QString());
+        label_TotalWindPress->setText(QApplication::translate("BrakeStatePage", "\344\270\273\351\243\216\347\274\270\345\216\213\345\212\233(kpa)", 0, QApplication::UnicodeUTF8));
+        label_car2No->setText(QApplication::translate("BrakeStatePage", "2", 0, QApplication::UnicodeUTF8));
+        label_car3AirReedPress2_1->setText(QString());
+        label_vehicleNo->setText(QApplication::translate("BrakeStatePage", "\350\275\246\345\217\267", 0, QApplication::UnicodeUTF8));
+        label_car1AirReedPress1_1->setText(QString());
+        label_car2AirReedPress2_1->setText(QString());
+        label_car3AirReedPress1_1->setText(QString());
+        label_TotalWindPress2->setText(QString());
+        label_car4AirReedPress1_2->setText(QString());
+        label_car2AirReedPress2_2->setText(QString());
+        label_car1AirReedPress2_2->setText(QString());
+        label_car3AirReedPress2_2->setText(QString());
+        label_car4AirReedPress2_2->setText(QString());
+        label_car2AirReedPress1_2->setText(QString());
+        label_car3AirReedPress1_2->setText(QString());
+        label_car1AirReedPress1_2->setText(QString());
+        label_airReedPress_2->setText(QApplication::translate("BrakeStatePage", "ASP1", 0, QApplication::UnicodeUTF8));
+        label_airReedPress_3->setText(QApplication::translate("BrakeStatePage", "ASP2", 0, QApplication::UnicodeUTF8));
+        label_car1Load2->setText(QString());
+        label_car2Load2->setText(QString());
+        label_car3Load1->setText(QString());
+        label_car4Load1->setText(QString());
+        label_cylPressure->setText(QApplication::translate("BrakeStatePage", "\345\210\266\345\212\250\347\274\270\345\216\213\345\212\233\n"
+"(kpa)", 0, QApplication::UnicodeUTF8));
+        label_car4EmergencyBrake2->setText(QString());
+        label_car2EmergencyBrake1->setText(QString());
+        label_car1EmergencyBrake1->setText(QString());
+        label_emergencyBrake->setText(QApplication::translate("BrakeStatePage", "\347\264\247\346\200\245\345\210\266\345\212\250", 0, QApplication::UnicodeUTF8));
+        label_car3EmergencyBrake2->setText(QString());
+        label_cylPressure1->setText(QApplication::translate("BrakeStatePage", "1", 0, QApplication::UnicodeUTF8));
+        label_cylPressure2->setText(QApplication::translate("BrakeStatePage", "2", 0, QApplication::UnicodeUTF8));
+        label_cylPressureMp2_12->setText(QString());
+        label_cylPressureTc1_11->setText(QString());
+        label_cylPressureMp2_21->setText(QString());
+        label_cylPressureMp1_22->setText(QString());
+        label_cylPressureTc2_12->setText(QString());
+        label_cylPressureMp1_11->setText(QString());
+        label_cylPressureMp1_12->setText(QString());
+        label_cylPressureTc1_22->setText(QString());
+        label_cylPressureTc1_12->setText(QString());
+        label_cylPressureMp1_21->setText(QString());
+        label_cylPressureTc1_21->setText(QString());
+        label_cylPressureTc2_21->setText(QString());
+        label_cylPressureMp2_22->setText(QString());
+        label_cylPressureMp2_11->setText(QString());
+        label_cylPressureTc2_22->setText(QString());
+        label_cylPressureTc2_11->setText(QString());
+        btn_EmergencyBroadcast->setText(QApplication::translate("BrakeStatePage", "\347\264\247\346\200\245\345\271\277\346\222\255", 0, QApplication::UnicodeUTF8));
+        label_car2EmergencyBrake2->setText(QString());
+        label_car3EmergencyBrake1->setText(QString());
+        label_car1EmergencyBrake2->setText(QString());
+        label_car4EmergencyBrake1->setText(QString());
+        label_cylPressureMp2_13->setText(QApplication::translate("BrakeStatePage", "2", 0, QApplication::UnicodeUTF8));
+        label_cylPressureTc2_13->setText(QApplication::translate("BrakeStatePage", "1", 0, QApplication::UnicodeUTF8));
+        label_cylPressureTc1_13->setText(QApplication::translate("BrakeStatePage", "2", 0, QApplication::UnicodeUTF8));
+        label_cylPressureMp2_14->setText(QApplication::translate("BrakeStatePage", "1", 0, QApplication::UnicodeUTF8));
+        label_cylPressureTc1_14->setText(QApplication::translate("BrakeStatePage", "1", 0, QApplication::UnicodeUTF8));
+        label_cylPressureMp1_13->setText(QApplication::translate("BrakeStatePage", "2", 0, QApplication::UnicodeUTF8));
+        label_cylPressureMp1_14->setText(QApplication::translate("BrakeStatePage", "1", 0, QApplication::UnicodeUTF8));
+        label_cylPressureTc2_14->setText(QApplication::translate("BrakeStatePage", "2", 0, QApplication::UnicodeUTF8));
+        label_cylPressure1_2->setText(QApplication::translate("BrakeStatePage", "\350\275\254\345\220\221\346\236\266", 0, QApplication::UnicodeUTF8));
+        label_airBrake11->setText(QString());
+        label_airBrake->setText(QApplication::translate("BrakeStatePage", "\347\251\272\346\260\224\345\210\266\345\212\250", 0, QApplication::UnicodeUTF8));
+        label_airBrake21->setText(QString());
+        label_airBrake32->setText(QString());
+        label_airBrake31->setText(QString());
+        label_airBrake42->setText(QString());
+        label_airBrake12->setText(QString());
+        label_airBrake22->setText(QString());
+        label_airBrake41->setText(QString());
+        keepBrake11->setText(QString());
+        keepBrake->setText(QApplication::translate("BrakeStatePage", "\344\277\235\346\214\201\345\210\266\345\212\250", 0, QApplication::UnicodeUTF8));
+        keepBrake21->setText(QString());
+        keepBrake32->setText(QString());
+        keepBrake31->setText(QString());
+        keepBrake42->setText(QString());
+        keepBrake12->setText(QString());
+        keepBrake22->setText(QString());
+        keepBrake41->setText(QString());
+        stayBrake1->setText(QString());
+        stayBrake->setText(QApplication::translate("BrakeStatePage", "\345\201\234\346\224\276\345\210\266\345\212\250", 0, QApplication::UnicodeUTF8));
+        stayBrake2->setText(QString());
+        stayBrake3->setText(QString());
+        stayBrake4->setText(QString());
+    } // retranslateUi
+
+};
+
+namespace Ui {
+    class BrakeStatePage: public Ui_BrakeStatePage {};
+} // namespace Ui
+
+QT_END_NAMESPACE
+
+#endif // UI_BRAKESTATEPAGE_H

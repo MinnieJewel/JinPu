@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SIVTestPage</class>
+ <widget class="QWidget" name="SIVTestPage">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1024</width>
+    <height>688</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QLabel
+{
+	color: white;
+	border: 2px groove, gray;
+    border-color: gray;
+	font: 20px, &quot;SimHei&quot;;	
+}
+
+QWidget
+{
+	background-color: black;
+}
+
+QPushButton
+{
+	font: 20px, &quot;SimHei&quot;;
+    color: black;
+	background-color: rgb(250, 250, 250);
+	border-radius: 5px;
+}</string>
+  </property>
+  <widget class="QLabel" name="label_CCU4">
+   <property name="geometry">
+    <rect>
+     <x>779</x>
+     <y>146</y>
+     <width>180</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>4</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_cut1">
+   <property name="geometry">
+    <rect>
+     <x>172</x>
+     <y>204</y>
+     <width>190</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_CCU3">
+   <property name="geometry">
+    <rect>
+     <x>570</x>
+     <y>146</y>
+     <width>210</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>3</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_CCU2">
+   <property name="geometry">
+    <rect>
+     <x>361</x>
+     <y>146</y>
+     <width>210</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>2</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_reset4">
+   <property name="geometry">
+    <rect>
+     <x>779</x>
+     <y>175</y>
+     <width>180</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_cut4">
+   <property name="geometry">
+    <rect>
+     <x>779</x>
+     <y>204</y>
+     <width>180</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_cut">
+   <property name="geometry">
+    <rect>
+     <x>43</x>
+     <y>204</y>
+     <width>130</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string>切除</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_CCU">
+   <property name="geometry">
+    <rect>
+     <x>43</x>
+     <y>146</y>
+     <width>130</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>车号</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_cut2">
+   <property name="geometry">
+    <rect>
+     <x>361</x>
+     <y>204</y>
+     <width>210</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string>--</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_reset2">
+   <property name="geometry">
+    <rect>
+     <x>361</x>
+     <y>175</y>
+     <width>210</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string>--</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_reset1">
+   <property name="geometry">
+    <rect>
+     <x>172</x>
+     <y>175</y>
+     <width>190</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_reset">
+   <property name="geometry">
+    <rect>
+     <x>43</x>
+     <y>175</y>
+     <width>130</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string>复位</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_cut3">
+   <property name="geometry">
+    <rect>
+     <x>570</x>
+     <y>204</y>
+     <width>210</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string>--</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_CCU1">
+   <property name="geometry">
+    <rect>
+     <x>172</x>
+     <y>146</y>
+     <width>190</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>1</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_reset3">
+   <property name="geometry">
+    <rect>
+     <x>570</x>
+     <y>175</y>
+     <width>210</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string>--</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

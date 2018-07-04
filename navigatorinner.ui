@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>NavigatorInner</class>
+ <widget class="QWidget" name="NavigatorInner">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1024</width>
+    <height>60</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget
+{
+	background-color: black;
+}
+
+QPushButton
+{
+	font: 20px, &quot;SimHei&quot;;
+    color: black;
+	background-color: rgb(250, 250, 250);
+	border-radius: 5px;
+}
+QLabel
+{
+	color: white;
+	font: 20px, &quot;SimHei&quot;;
+	border:1px solid white;
+}
+	</string>
+  </property>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Header</class>
+ <widget class="QWidget" name="Header">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1024</width>
+    <height>80</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget
+{
+	background-color: black;
+}
+
+QLabel
+{
+	color: white;
+	font: 20px, &quot;SimHei&quot;;
+	border:1px solid white;
+}
+	
+QPushButton
+{
+	background-color: black;
+}</string>
+  </property>
+  <widget class="QLabel" name="pageName">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>108</width>
+     <height>80</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>网络</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="netVoltage">
+   <property name="geometry">
+    <rect>
+     <x>108</x>
+     <y>0</y>
+     <width>110</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>网压</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="netVoltageValue">
+   <property name="geometry">
+    <rect>
+     <x>108</x>
+     <y>40</y>
+     <width>110</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="netCurrent">
+   <property name="geometry">
+    <rect>
+     <x>218</x>
+     <y>0</y>
+     <width>110</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>网流</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="netCurrentValue">
+   <property name="geometry">
+    <rect>
+     <x>218</x>
+     <y>40</y>
+     <width>110</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="speed">
+   <property name="geometry">
+    <rect>
+     <x>328</x>
+     <y>0</y>
+     <width>120</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>速度</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="speedValue">
+   <property name="geometry">
+    <rect>
+     <x>328</x>
+     <y>40</y>
+     <width>120</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="level">
+   <property name="geometry">
+    <rect>
+     <x>448</x>
+     <y>0</y>
+     <width>180</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>牵引/制动级位</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="levelValue">
+   <property name="geometry">
+    <rect>
+     <x>448</x>
+     <y>40</y>
+     <width>180</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="currentStation">
+   <property name="geometry">
+    <rect>
+     <x>628</x>
+     <y>0</y>
+     <width>200</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>当前站</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="currentStationValue">
+   <property name="geometry">
+    <rect>
+     <x>628</x>
+     <y>40</y>
+     <width>200</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="dataTime">
+   <property name="geometry">
+    <rect>
+     <x>828</x>
+     <y>0</y>
+     <width>116</width>
+     <height>80</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="faultButton">
+   <property name="geometry">
+    <rect>
+     <x>947</x>
+     <y>2</y>
+     <width>75</width>
+     <height>78</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>WhatsThisCursor</cursorShape>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::NoFocus</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(0, 0, 0);
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainPage</class>
+ <widget class="QWidget" name="MainPage">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1024</width>
+    <height>618</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QLabel
+{
+	color: white;
+	border: 2px groove, gray;
+    border-color: gray;
+	font: 20px, &quot;SimHei&quot;;
+}
+
+QWidget
+{
+	background-color: black;
+}
+
+QPushButton
+{
+	font: 20px, &quot;SimHei&quot;;
+    color: black;
+	background-color: rgb(250, 250, 250);
+	border-radius: 5px;
+}</string>
+  </property>
+  <widget class="QPushButton" name="btn_EmergencyBroadcast">
+   <property name="geometry">
+    <rect>
+     <x>860</x>
+     <y>560</y>
+     <width>130</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>紧急广播</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_washing">
+   <property name="geometry">
+    <rect>
+     <x>900</x>
+     <y>360</y>
+     <width>100</width>
+     <height>90</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius:15px;
+font: 17px, &quot;SimHei&quot;;
+color:black;
+background-color: rgb(255, 255, 0);
+</string>
+   </property>
+   <property name="text">
+    <string>洗车
+模式</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_BHBBreak">
+   <property name="geometry">
+    <rect>
+     <x>900</x>
+     <y>190</y>
+     <width>100</width>
+     <height>90</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius:15px;
+font:17px, &quot;SimHei&quot;;
+color:black;
+background-color: rgb(255, 255, 0);
+</string>
+   </property>
+   <property name="text">
+    <string>母线
+高速
+断路器
+断开</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_Broadcast">
+   <property name="geometry">
+    <rect>
+     <x>900</x>
+     <y>90</y>
+     <width>100</width>
+     <height>90</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius:15px;
+background-color: rgb(85, 255, 255);
+font:17px, &quot;SimHei&quot;;
+color:black;
+</string>
+   </property>
+   <property name="text">
+    <string>半自动
+广播</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_totalKilometers">
+   <property name="geometry">
+    <rect>
+     <x>280</x>
+     <y>580</y>
+     <width>141</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-color:black;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_totalHours">
+   <property name="geometry">
+    <rect>
+     <x>590</x>
+     <y>580</y>
+     <width>141</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-color:black;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_EmergencyBrake">
+   <property name="geometry">
+    <rect>
+     <x>900</x>
+     <y>290</y>
+     <width>100</width>
+     <height>60</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-radius:15px;
+background-color: rgb(255, 0, 0);
+font:17px, &quot;SimHei&quot;;
+color:black;
+</string>
+   </property>
+   <property name="text">
+    <string>紧急制动</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_idleMp1">
+   <property name="geometry">
+    <rect>
+     <x>360</x>
+     <y>130</y>
+     <width>100</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font:20px, &quot;SimHei&quot;;
+color: rgb(255, 170, 0);
+</string>
+   </property>
+   <property name="text">
+    <string>空转</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_idleMp2">
+   <property name="geometry">
+    <rect>
+     <x>560</x>
+     <y>130</y>
+     <width>100</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font:20px, &quot;SimHei&quot;;
+color: rgb(255, 170, 0);
+</string>
+   </property>
+   <property name="text">
+    <string>空转</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_slideMP2">
+   <property name="geometry">
+    <rect>
+     <x>560</x>
+     <y>190</y>
+     <width>100</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font:20px, &quot;SimHei&quot;;
+color: rgb(255, 170, 0);</string>
+   </property>
+   <property name="text">
+    <string>滑行</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_slideMP1">
+   <property name="geometry">
+    <rect>
+     <x>360</x>
+     <y>190</y>
+     <width>100</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font:20px, &quot;SimHei&quot;;
+color: rgb(255, 170, 0);</string>
+   </property>
+   <property name="text">
+    <string>滑行</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_slideTC1">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>190</y>
+     <width>100</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font:20px, &quot;SimHei&quot;;
+color: rgb(255, 170, 0);</string>
+   </property>
+   <property name="text">
+    <string>滑行</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_slideTC2">
+   <property name="geometry">
+    <rect>
+     <x>750</x>
+     <y>190</y>
+     <width>100</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font:20px, &quot;SimHei&quot;;
+color: rgb(255, 170, 0);</string>
+   </property>
+   <property name="text">
+    <string>滑行</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

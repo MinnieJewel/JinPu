@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>BatteryHelpPage</class>
+ <widget class="QWidget" name="BatteryHelpPage">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1024</width>
+    <height>708</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QLabel
+{
+	color: white;
+	border: 2px groove gray;
+    border-color: gray;
+	font: 20px, &quot;SimHei&quot;;	
+}
+
+QWidget
+{
+	background-color: black;
+}
+
+QPushButton
+{
+	font: 20px, &quot;SimHei&quot;;
+    color: black;
+	background-color: rgb(250, 250, 250);
+	border-radius: 5px;
+}</string>
+  </property>
+  <widget class="QLabel" name="label_viewComment">
+   <property name="geometry">
+    <rect>
+     <x>550</x>
+     <y>215</y>
+     <width>474</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_viewCondition">
+   <property name="geometry">
+    <rect>
+     <x>250</x>
+     <y>215</y>
+     <width>150</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>1</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_voltage_2">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>5</y>
+     <width>250</width>
+     <height>211</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>充电电压值/放电电压值/
+箱内温度值/充电电流值/
+放电电流值/超压电池/
+低压电池/超温电池/
+超内阻电池/
+超压报警电池值/
+地压报警电池值/
+超温报警电池值/
+超内阻报警电池值</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_voltage4">
+   <property name="geometry">
+    <rect>
+     <x>250</x>
+     <y>285</y>
+     <width>150</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>3</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_voltage4_2">
+   <property name="geometry">
+    <rect>
+     <x>550</x>
+     <y>285</y>
+     <width>474</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_voltage3_2">
+   <property name="geometry">
+    <rect>
+     <x>550</x>
+     <y>250</y>
+     <width>474</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_voltage3_1">
+   <property name="geometry">
+    <rect>
+     <x>400</x>
+     <y>250</y>
+     <width>150</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: blue;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_viewItem">
+   <property name="geometry">
+    <rect>
+     <x>400</x>
+     <y>215</y>
+     <width>150</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(0,255,0);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_voltage">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>215</y>
+     <width>250</width>
+     <height>140</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>报警指示灯状态</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_voltage3">
+   <property name="geometry">
+    <rect>
+     <x>250</x>
+     <y>250</y>
+     <width>150</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>2</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_voltage4_1">
+   <property name="geometry">
+    <rect>
+     <x>400</x>
+     <y>285</y>
+     <width>150</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: yellow;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_breakLevel2_3">
+   <property name="geometry">
+    <rect>
+     <x>250</x>
+     <y>5</y>
+     <width>774</width>
+     <height>211</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>显示实际值</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_voltage4_3">
+   <property name="geometry">
+    <rect>
+     <x>550</x>
+     <y>320</y>
+     <width>474</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_voltage4_4">
+   <property name="geometry">
+    <rect>
+     <x>400</x>
+     <y>320</y>
+     <width>150</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_voltage4_5">
+   <property name="geometry">
+    <rect>
+     <x>250</x>
+     <y>320</y>
+     <width>150</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>无效</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_back">
+   <property name="geometry">
+    <rect>
+     <x>15</x>
+     <y>653</y>
+     <width>100</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 20px, &quot;SimHei&quot;;
+color: black;
+background-color: rgb(250, 250, 250);
+border-radius: 5px;</string>
+   </property>
+   <property name="text">
+    <string>返回</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="NavigatorBackground">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>637</y>
+     <width>1024</width>
+     <height>70</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <zorder>NavigatorBackground</zorder>
+  <zorder>label_viewComment</zorder>
+  <zorder>label_viewCondition</zorder>
+  <zorder>label_voltage_2</zorder>
+  <zorder>label_voltage4</zorder>
+  <zorder>label_voltage4_2</zorder>
+  <zorder>label_voltage3_2</zorder>
+  <zorder>label_voltage3_1</zorder>
+  <zorder>label_viewItem</zorder>
+  <zorder>label_voltage</zorder>
+  <zorder>label_voltage3</zorder>
+  <zorder>label_voltage4_1</zorder>
+  <zorder>label_breakLevel2_3</zorder>
+  <zorder>label_voltage4_3</zorder>
+  <zorder>label_voltage4_4</zorder>
+  <zorder>label_voltage4_5</zorder>
+  <zorder>btn_back</zorder>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

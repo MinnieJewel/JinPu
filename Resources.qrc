@@ -1,0 +1,26 @@
+<RCC>
+    <qresource prefix="/">
+        <file>image/123.png</file>
+        <file>image/WarningIcon.PNG</file>
+        <file>image/FaultRed.PNG</file>
+        <file>image/up.PNG</file>
+        <file>image/down.PNG</file>
+        <file>image/cut.png</file>
+        <file>image/STOP.png</file>
+        <file>image/left.png</file>
+        <file>image/right.png</file>
+        <file>image/lower.png</file>
+        <file>image/slide.png</file>
+        <file>image/rightFlug.png</file>
+        <file>image/wrongFlug.png</file>
+        <file>image/fireAlarmError.png</file>
+        <file>image/fireAlarmOffLine.png</file>
+        <file>image/fireAlarmOk.png</file>
+        <file>image/fireAlarmWarning.png</file>
+        <file>image/doorBlock.png</file>
+        <file>image/doorEmergency.png</file>
+        <file>image/doorOpenError.png</file>
+        <file>image/Fault.PNG</file>
+        <file>image/lock.png</file>
+    </qresource>
+</RCC>

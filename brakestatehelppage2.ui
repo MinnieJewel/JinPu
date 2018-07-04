@@ -1,0 +1,546 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>BrakestateHelpPage2</class>
+ <widget class="QWidget" name="BrakestateHelpPage2">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1024</width>
+    <height>708</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QLabel
+{
+	color: white;
+	border: 2px groove, gray;
+    border-color: gray;
+	font: 20px, &quot;SimHei&quot;;	
+}
+
+QWidget
+{
+	background-color: black;
+}
+
+QPushButton
+{
+	font: 20px, &quot;SimHei&quot;;
+    color: black;
+	background-color: rgb(250, 250, 250);
+	border-radius: 5px;
+}</string>
+  </property>
+  <widget class="QLabel" name="label_voltage4_1">
+   <property name="geometry">
+    <rect>
+     <x>400</x>
+     <y>160</y>
+     <width>150</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: white;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_viewItem">
+   <property name="geometry">
+    <rect>
+     <x>400</x>
+     <y>55</y>
+     <width>150</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(0,255,0);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_breakLevel1_2">
+   <property name="geometry">
+    <rect>
+     <x>550</x>
+     <y>265</y>
+     <width>474</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>防滑系统工作不正常</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_voltage1_2">
+   <property name="geometry">
+    <rect>
+     <x>550</x>
+     <y>90</y>
+     <width>474</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>防滑系统工作正常，系统无防滑控制</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_current1_1">
+   <property name="geometry">
+    <rect>
+     <x>400</x>
+     <y>195</y>
+     <width>150</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(0,255,0);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_voltage4_2">
+   <property name="geometry">
+    <rect>
+     <x>550</x>
+     <y>160</y>
+     <width>474</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_current1_2">
+   <property name="geometry">
+    <rect>
+     <x>550</x>
+     <y>195</y>
+     <width>474</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>防滑系统工作正常，轴有防滑控制</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_viewComment">
+   <property name="geometry">
+    <rect>
+     <x>550</x>
+     <y>55</y>
+     <width>474</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>防滑系统工作正常，系统有防滑控制</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_current1">
+   <property name="geometry">
+    <rect>
+     <x>250</x>
+     <y>195</y>
+     <width>150</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>有防滑控制</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_voltage1_1">
+   <property name="geometry">
+    <rect>
+     <x>400</x>
+     <y>90</y>
+     <width>150</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_breakLevel1">
+   <property name="geometry">
+    <rect>
+     <x>250</x>
+     <y>265</y>
+     <width>150</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>故障</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_voltage3_1">
+   <property name="geometry">
+    <rect>
+     <x>400</x>
+     <y>125</y>
+     <width>150</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: red;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_breakLevel1_1">
+   <property name="geometry">
+    <rect>
+     <x>400</x>
+     <y>265</y>
+     <width>150</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: red;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_voltage4">
+   <property name="geometry">
+    <rect>
+     <x>250</x>
+     <y>160</y>
+     <width>150</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>通信异常</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_voltage3">
+   <property name="geometry">
+    <rect>
+     <x>250</x>
+     <y>125</y>
+     <width>150</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>故障</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_breakLevel2">
+   <property name="geometry">
+    <rect>
+     <x>250</x>
+     <y>300</y>
+     <width>150</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>通信异常</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_breakLevel2_2">
+   <property name="geometry">
+    <rect>
+     <x>550</x>
+     <y>300</y>
+     <width>474</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_current2_2">
+   <property name="geometry">
+    <rect>
+     <x>550</x>
+     <y>230</y>
+     <width>474</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>防滑系统工作正常，轴无防滑控制</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_voltage">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>55</y>
+     <width>250</width>
+     <height>140</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>防滑系统</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_voltage3_2">
+   <property name="geometry">
+    <rect>
+     <x>550</x>
+     <y>125</y>
+     <width>474</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>防滑系统工作不正常</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_breakLevel2_1">
+   <property name="geometry">
+    <rect>
+     <x>400</x>
+     <y>300</y>
+     <width>150</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: white;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_current2_1">
+   <property name="geometry">
+    <rect>
+     <x>400</x>
+     <y>230</y>
+     <width>150</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_voltage1">
+   <property name="geometry">
+    <rect>
+     <x>250</x>
+     <y>90</y>
+     <width>150</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>无防滑控制</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_viewCondition">
+   <property name="geometry">
+    <rect>
+     <x>250</x>
+     <y>55</y>
+     <width>150</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>有防滑控制</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_current2">
+   <property name="geometry">
+    <rect>
+     <x>250</x>
+     <y>230</y>
+     <width>150</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>无防滑控制</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_voltage_2">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>195</y>
+     <width>250</width>
+     <height>140</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>轴防滑</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_defaultInfo1_18">
+   <property name="geometry">
+    <rect>
+     <x>400</x>
+     <y>370</y>
+     <width>150</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_defaultInfo1_19">
+   <property name="geometry">
+    <rect>
+     <x>250</x>
+     <y>370</y>
+     <width>150</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>整车制动未切除</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_defaultInfo1_20">
+   <property name="geometry">
+    <rect>
+     <x>550</x>
+     <y>405</y>
+     <width>474</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_breakLevel_2">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>335</y>
+     <width>250</width>
+     <height>105</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>整车制动切除
+保持制动切除</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_defaultInfo1_21">
+   <property name="geometry">
+    <rect>
+     <x>250</x>
+     <y>405</y>
+     <width>150</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>通信异常</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_defaultInfo1_2">
+   <property name="geometry">
+    <rect>
+     <x>550</x>
+     <y>335</y>
+     <width>474</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_defaultInfo1_22">
+   <property name="geometry">
+    <rect>
+     <x>550</x>
+     <y>370</y>
+     <width>474</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 13px, &quot;SimHei&quot;;	</string>
+   </property>
+   <property name="text">
+    <string>整车制动切除时说明无此状态，保持制动切除时表明司机室未激活或者无此状态</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_defaultInfo1_23">
+   <property name="geometry">
+    <rect>
+     <x>400</x>
+     <y>405</y>
+     <width>150</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: white;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_defaultInfo1_1">
+   <property name="geometry">
+    <rect>
+     <x>400</x>
+     <y>335</y>
+     <width>150</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(0,255,0);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_defaultInfo1">
+   <property name="geometry">
+    <rect>
+     <x>250</x>
+     <y>335</y>
+     <width>150</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>整车制动切除</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

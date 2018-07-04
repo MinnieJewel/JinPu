@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DataMoniter</class>
+ <widget class="QWidget" name="DataMoniter">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1024</width>
+    <height>768</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QLabel
+{
+	color: white;
+	border: 2px groove, gray;
+    border-color: gray;
+	font: 20px, &quot;SimHei&quot;;	
+}
+
+QWidget
+{
+	background-color: black;
+}
+
+QPushButton
+{
+	font: 20px, &quot;SimHei&quot;;
+    color: black;
+	background-color: rgb(250, 250, 250);
+	border-radius: 5px;
+}
+QPushButton:pressed
+{
+	font: 20px, &quot;SimHei&quot;;
+    color: white;
+	background-color: rgb(189, 214, 238);
+	border-radius: 5px;
+}
+
+</string>
+  </property>
+  <widget class="QPushButton" name="btn_hmi">
+   <property name="geometry">
+    <rect>
+     <x>920</x>
+     <y>10</y>
+     <width>80</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>HMI</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_ccu1">
+   <property name="geometry">
+    <rect>
+     <x>920</x>
+     <y>52</y>
+     <width>80</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>CCU1</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_riom">
+   <property name="geometry">
+    <rect>
+     <x>920</x>
+     <y>136</y>
+     <width>80</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>RIOM</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_erm">
+   <property name="geometry">
+    <rect>
+     <x>920</x>
+     <y>178</y>
+     <width>80</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>ERM</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_fau">
+   <property name="geometry">
+    <rect>
+     <x>920</x>
+     <y>682</y>
+     <width>80</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>FAU</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_bcu">
+   <property name="geometry">
+    <rect>
+     <x>920</x>
+     <y>220</y>
+     <width>80</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>BCU</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_dcu">
+   <property name="geometry">
+    <rect>
+     <x>920</x>
+     <y>262</y>
+     <width>80</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>DCU</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_siv">
+   <property name="geometry">
+    <rect>
+     <x>920</x>
+     <y>304</y>
+     <width>80</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>SIV</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_edcu1">
+   <property name="geometry">
+    <rect>
+     <x>920</x>
+     <y>346</y>
+     <width>80</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>EDCU1</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_pis">
+   <property name="geometry">
+    <rect>
+     <x>920</x>
+     <y>430</y>
+     <width>80</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>PIS</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_hvac">
+   <property name="geometry">
+    <rect>
+     <x>920</x>
+     <y>472</y>
+     <width>80</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>HVAC</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_atc">
+   <property name="geometry">
+    <rect>
+     <x>920</x>
+     <y>514</y>
+     <width>80</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>ATC</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_pds">
+   <property name="geometry">
+    <rect>
+     <x>920</x>
+     <y>556</y>
+     <width>80</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>PDS</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_bcg">
+   <property name="geometry">
+    <rect>
+     <x>920</x>
+     <y>598</y>
+     <width>80</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>BCG</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_bms">
+   <property name="geometry">
+    <rect>
+     <x>920</x>
+     <y>640</y>
+     <width>80</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>BMS</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_back">
+   <property name="geometry">
+    <rect>
+     <x>920</x>
+     <y>730</y>
+     <width>80</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>返回</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_ccu2">
+   <property name="geometry">
+    <rect>
+     <x>920</x>
+     <y>94</y>
+     <width>80</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>CCU2</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_edcu2">
+   <property name="geometry">
+    <rect>
+     <x>920</x>
+     <y>388</y>
+     <width>80</width>
+     <height>30</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>EDCU2</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
